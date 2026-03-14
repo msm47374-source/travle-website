@@ -249,20 +249,26 @@ function applyFilters() {
   }
 }
 
-applyBtn.addEventListener('click', applyFilters);
-// Populate on load
-window.addEventListener('DOMContentLoaded', applyFilters);
+if (applyBtn) {
+  applyBtn.addEventListener('click', applyFilters);
+  // Populate on load
+  window.addEventListener('DOMContentLoaded', applyFilters);
+}
 
 // ── Hero Search ──
-document.querySelector('.search-btn').addEventListener('click', () => {
-  const val = document.getElementById('heroSearch').value.trim().toLowerCase();
-  if (!val) return;
-  const section = document.getElementById('treks');
-  section.scrollIntoView({ behavior: 'smooth' });
-});
-document.getElementById('heroSearch').addEventListener('keypress', e => {
-  if (e.key === 'Enter') document.querySelector('.search-btn').click();
-});
+const sBtn = document.querySelector('.search-btn');
+const sInput = document.getElementById('heroSearch');
+if (sBtn && sInput) {
+  sBtn.addEventListener('click', () => {
+    const val = sInput.value.trim().toLowerCase();
+    if (!val) return;
+    const section = document.getElementById('treks');
+    if (section) section.scrollIntoView({ behavior: 'smooth' });
+  });
+  sInput.addEventListener('keypress', e => {
+    if (e.key === 'Enter') sBtn.click();
+  });
+}
 
 // ── Intersection Observer for Fade-in ──
 function observeFadeIns() {
