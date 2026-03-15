@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gokyo Lakes Trek 2026 | Turquoise Lakes & Everest Views | HimalayaQuest</title>
+    <meta name="description"
+        content="Experience the stunning 14-day Gokyo Lakes Trek with HimalayaQuest. Discover turquoise glacial lakes, climb Gokyo Ri for panoramic Everest views, and explore the heart of the Sherpa highlands." />
+    <meta name="keywords"
+        content="Gokyo Lakes Trek, Gokyo Ri, Everest Region Trekking, Nepal Himalayan Treks, Ngozumpa Glacier, turquoise lakes Nepal" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        /* Page Specific Styles */
+        :root {
+            --pkg-green: #155a48;
+            --pkg-orange: #ff7a00;
+        }
+
+        .pkg-hero {
+            height: 70vh;
+            min-height: 500px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .pkg-hero-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('hero.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            transform: scale(1.1);
+        }
+
+        .pkg-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+            z-index: 0;
+        }
+
+        .pkg-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .pkg-badge {
+            background: var(--pkg-orange);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .pkg-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            margin-bottom: 15px;
+            line-height: 1.1;
+        }
+
+        .pkg-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        /* Essential Quick Facts Bar */
+        .quick-facts-bar {
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            margin-top: -60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .fact-item {
+            text-align: center;
+            border-right: 1px solid #eee;
+        }
+
+        .fact-item:last-child {
+            border-right: none;
+        }
+
+        .fact-item i {
+            color: var(--pkg-green);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .fact-item strong {
+            display: block;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .fact-item span {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Sticky Booking Bar */
+        .sticky-booking {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .sticky-booking.show {
+            transform: translateY(0);
+        }
+
+        .sticky-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sticky-price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--pkg-green);
+        }
+
+        .sticky-price span {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #666;
+        }
+
+        /* Itinerary Accordion */
+        .itinerary-container {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .iti-item {
+            border: 1px solid #eef0f3;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            background: #fafbfc;
+            transition: all 0.3s ease;
+        }
+
+        .iti-header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: white;
+        }
+
+        .iti-header h4 {
+            margin: 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .iti-day-circle {
+            width: 40px;
+            height: 40px;
+            background: var(--pkg-green);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .iti-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .iti-item.active {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border-color: var(--pkg-green);
+        }
+
+        .iti-item.active .iti-content {
+            padding: 10px 20px 25px 75px;
+            max-height: 1000px;
+        }
+
+        .iti-item.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        /* Highlights Grid */
+        .highlights-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .high-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+        }
+
+        .high-item i {
+            color: var(--pkg-orange);
+            font-size: 1.2rem;
+            margin-top: 4px;
+        }
+
+        /* Includes/Excludes Side by Side */
+        .cost-section {
+            background: #f1f5f3;
+            border-radius: 20px;
+            padding: 50px;
+        }
+
+        .cost-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .cost-col h3 {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cost-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cost-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .cost-list li::before {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+        }
+
+        .inc-list li::before {
+            content: "\f00c";
+            color: var(--pkg-green);
+        }
+
+        .exc-list li::before {
+            content: "\f00d";
+            color: #dc3545;
+        }
+
+        @media (max-width: 992px) {
+            .cost-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .quick-facts-bar {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .fact-item {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 15px;
+            }
+
+            .fact-item:last-child {
+                border-bottom: none;
+            }
+
+            .sticky-inner {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .iti-item.active .iti-content {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== STICKY NAVBAR ===== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-main">
+            <div class="nav-container nav-main-inner">
+                <a href="index.html#home" class="nav-logo">
+                    <span class="logo-icon"><i class="fas fa-mountain"></i></span>
+                    <span class="logo-text">Himalaya<span class="logo-accent">Quest</span></span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li class="nav-item has-dropdown">
+                        <a href="index.html#treks" class="nav-link">Treks <i class="fas fa-chevron-down nav-arrow"></i></a>
+                        <div class="dropdown">
+                            <div class="dropdown-inner">
+                                <div class="dropdown-col">
+                                    <p class="dropdown-heading">Featured Treks</p>
+                                    <a href="everest-base-camp.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-campground"></i></span>
+                                        <span><strong>Everest Base Camp</strong><small>14 Days · Challenging</small></span>
+                                    </a>
+                                    <a href="annapurna-circuit.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-mountain"></i></span>
+                                        <span><strong>Annapurna Circuit</strong><small>18 Days · Moderate</small></span>
+                                    </a>
+                                    <a href="langtang-valley.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-tree"></i></span>
+                                        <span><strong>Langtang Valley</strong><small>10 Days · Easy</small></span>
+                                    </a>
+                                    <a href="manaslu-circuit.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-compass"></i></span>
+                                        <span><strong>Manaslu Circuit</strong><small>16 Days · Challenging</small></span>
+                                    </a>
+                                </div>
+                                <div class="dropdown-col dropdown-col-cta">
+                                    <p class="dropdown-heading">Quick Actions</p>
+                                    <a href="index.html#filter" class="dropdown-link"><i class="fas fa-sliders-h"></i> Find My Trek</a>
+                                    <a href="departures.html" class="dropdown-link"><i class="fas fa-calendar-check"></i> View Departures</a>
+                                    <a href="index.html#plan" class="dropdown-link"><i class="fas fa-paper-plane"></i> Custom Trek</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="departures.html" class="nav-link">Departures</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="destinations.html" class="nav-link">Destinations <i class="fas fa-chevron-down nav-arrow"></i></a>
+                        <div class="dropdown dropdown-sm">
+                            <div class="dropdown-inner">
+                                <div class="dropdown-col">
+                                    <p class="dropdown-heading">Regions</p>
+                                    <a href="everest-region.html" class="dropdown-link"><span><strong>Everest Region</strong></span></a>
+                                    <a href="destinations.html#annapurna" class="dropdown-link"><span><strong>Annapurna Region</strong></span></a>
+                                    <a href="destinations.html#langtang" class="dropdown-link"><span><strong>Langtang Region</strong></span></a>
+                                    <a href="destinations.html#manaslu" class="dropdown-link"><span><strong>Manaslu Region</strong></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="contact.html" class="nav-cta"><i class="fas fa-paper-plane"></i> Plan My Trip</a>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="pkg-hero">
+        <div class="pkg-hero-bg" style="background-image: url('hero.png');"></div>
+        <div class="pkg-hero-overlay"></div>
+        <div class="pkg-hero-content">
+            <span class="pkg-badge">Turquoise Wonders</span>
+            <h1>Gokyo Lakes Trek</h1>
+            <p>Experience the mesmerizing glacial lakes and the greatest panoramic view of the Everest giants.</p>
+            <div class="hero-btns">
+                <a href="#book" class="btn-primary">Book This Trek</a>
+                <a href="contact.html" class="btn-outline">Customize Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- ===== QUICK FACTS BAR ===== -->
+        <div class="quick-facts-bar">
+            <div class="fact-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Duration</span>
+                <strong>14 Days</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-mountain"></i>
+                <span>Max Altitude</span>
+                <strong>5,357m</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-signal"></i>
+                <span>Difficulty</span>
+                <strong>Moderate</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Region</span>
+                <strong>Everest</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-cloud-sun"></i>
+                <span>Best Season</span>
+                <strong>Spring / Autumn</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TREK OVERVIEW ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" style="text-align: left; max-width: 800px; margin-left: 0;">
+                <span class="section-tag">Overview</span>
+                <h2 class="section-title">A Journey to the <span class="accent">Emerald Lakes</span></h2>
+            </div>
+            <div class="overview-grid" style="display: grid; grid-template-columns: 3fr 2fr; gap: 50px; align-items: start;">
+                <div class="overview-text">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 20px;">
+                        The Gokyo Lakes trek is widely considered the most stunning alternative to the classic Everest Base Camp route. It leads you into the heart of the Khumbu through a different valley, leading to a series of six spectacular <strong>turquoise glacial lakes</strong>.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 20px;">
+                        Beyond the mesmerizing lakes, the trek offers a climb to the summit of <strong>Gokyo Ri (5,357m)</strong>. From here, you'll witness a vista that many argue surpasses that of Kala Patthar, featuring four of the world's fourteen 8,000m peaks: Everest, Lhotse, Makalu, and Cho Oyu.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #444;">
+                        Traversing the <strong>Ngozumpa Glacier</strong>—the largest in the Nepal Himalayas—and staying in the high-altitude settlement of Gokyo, this trek is a perfect blend of natural wonder and cultural depth.
+                    </p>
+                </div>
+                <div class="overview-table" style="background: #f8f9fa; padding: 30px; border-radius: 15px; border-left: 5px solid var(--pkg-green);">
+                    <h3 style="margin-bottom: 20px; font-size: 1.5rem;">Trip Facts</h3>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Group Size</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">2–12 Persons</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Accommodation</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Teahouses / Lodges</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Max Elevation</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">5,357m (Gokyo Ri)</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Difficulty</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Moderate</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px 0; color: #666;">Starting Price</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">$1,150</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HIGHLIGHTS ===== -->
+    <section class="section" style="background: #fff;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Highlights</span>
+                <h2 class="section-title">Experience the <span class="accent">Gokyo Magic</span></h2>
+            </div>
+            <ul class="highlights-list">
+                <li class="high-item"><i class="fas fa-water"></i><div><strong>The Six Glacial Lakes</strong><p>Hike alongside the mesmerizing turquoise waters of the Gokyo valley.</p></div></li>
+                <li class="high-item"><i class="fas fa-eye"></i><div><strong>Gokyo Ri Viewpoint</strong><p>Panoramic views of Everest, Lhotse, Makalu, and Cho Oyu from 5,357m.</p></div></li>
+                <li class="high-item"><i class="fas fa-icicles"></i><div><strong>Ngozumpa Glacier</strong><p>Walk across the largest glacier in the Nepal Himalayas.</p></div></li>
+                <li class="high-item"><i class="fas fa-mountain"></i><div><strong>Sherpa Villages</strong><p>Stay in authentic high-altitude settlements like Machhermo and Dole.</p></div></li>
+                <li class="high-item"><i class="fas fa-plane"></i><div><strong>Everest Flight</strong><p>The exhilarating flight from Kathmandu to the mountain airstrip of Lukla.</p></div></li>
+                <li class="high-item"><i class="fas fa-hiking"></i><div><strong>Off-beaten Path</strong><p>A quieter, more scenic alternative to the main Everest Base Camp trail.</p></div></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== ITINERARY ===== -->
+    <section class="section bg-light" id="itinerary">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Daily Route</span>
+                <h2 class="section-title">14 Days <span class="accent">Itinerary</span></h2>
+            </div>
+            <div class="itinerary-container">
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">01</span> Arrival in Kathmandu</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Transfer to hotel and trip briefing.</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">02</span> Fly to Lukla & Trek to Phakding</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">35 min flight followed by a 3-4 hour trek (2,610m).</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">03</span> Trek to Namche Bazaar</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Steep climb to the Sherpa capital (3,440m).</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">04</span> Acclimatization in Namche</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Hike to Everest View Hotel for first glimpses of the giants.</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">05</span> Trek to Phortse Thanga</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Branching off toward the Gokyo Valley (3,680m).</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">06</span> Trek to Machhermo</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Steady climb through rhododendron forests (4,470m).</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">07</span> Trek to Gokyo</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Witnessing the first and second lakes before arriving at Gokyo (4,800m).</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">08</span> Explore Fourth & Fifth Lakes</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">A stunning day trip further up the valley toward Cho Oyu base.</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">09</span> Gokyo Ri Hike & Trek to Dole</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Sunrise hike to Gokyo Ri (5,357m) then descent to Dole (4,200m).</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">10</span> Trek to Namche Bazaar</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Retracing steps back to the bustling hub.</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">11</span> Trek to Lukla</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Final trekking day back to the airstrip.</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">12</span> Fly to Kathmandu</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Return flight and free afternoon in Thamel.</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">13</span> Free Day in Kathmandu</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Shopping and optional sightseeing.</div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header"><h4><span class="iti-day-circle">14</span> Departure</h4><i class="fas fa-chevron-down"></i></div>
+                    <div class="iti-content">Transfer to airport for your flight home.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COST SECTION ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="cost-section">
+                <div class="cost-grid">
+                    <div class="cost-col">
+                        <h3><i class="fas fa-check-circle" style="color:var(--pkg-green)"></i> Cost Includes</h3>
+                        <ul class="cost-list inc-list">
+                            <li>All airport transfers by private vehicle</li>
+                            <li>3-star hotel in Kathmandu with breakfast</li>
+                            <li>Round trip flights Kathmandu - Lukla</li>
+                            <li>All necessary trekking permits (Sagarmatha NP)</li>
+                            <li>Teahouse accommodation during the trek</li>
+                            <li>Standard meals (B, L, D) during the trek</li>
+                            <li>Professional government-licensed guide</li>
+                            <li>Experienced porters (1 porter for 2 trekkers)</li>
+                        </ul>
+                    </div>
+                    <div class="cost-col">
+                        <h3><i class="fas fa-times-circle" style="color:#dc3545"></i> Cost Excludes</h3>
+                        <ul class="cost-list exc-list">
+                            <li>International airfare and Nepal visa</li>
+                            <li>Travel and medical insurance (REQUIRED)</li>
+                            <li>Personal trekking gear and equipment</li>
+                            <li>Tips for guide and porters</li>
+                            <li>Hot showers and battery charging on trek</li>
+                            <li>Personal expenses (Alcohol, snacks)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 HimalayaQuest Nepal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        // Simple Accordion for Itinerary
+        document.querySelectorAll('.iti-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manaslu Circuit Trek 2026 | 16 Days Itinerary & Cost | HimalayaQuest</title>
+    <meta name="description"
+        content="Trek the legendary 16-day Manaslu Circuit with HimalayaQuest. Cross Larkya La Pass (5,160m), circle the world's 8th highest peak, and explore remote Tibetan villages. Book today." />
+    <meta name="keywords"
+        content="Manaslu Circuit Trek, Larkya La Pass, Manaslu Base Camp, Nepal trekking, restricted area trek, Manaslu Conservation Area" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        /* Page Specific Styles */
+        :root {
+            --pkg-green: #155a48;
+            --pkg-orange: #ff7a00;
+        }
+
+        .pkg-hero {
+            height: 70vh;
+            min-height: 500px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .pkg-hero-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('manaslu.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            transform: scale(1.1);
+        }
+
+        .pkg-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3));
+            z-index: 0;
+        }
+
+        .pkg-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .pkg-badge {
+            background: var(--pkg-orange);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .pkg-badge.badge-challenging {
+            background: #dc2626;
+        }
+
+        .pkg-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            margin-bottom: 15px;
+            line-height: 1.1;
+        }
+
+        .pkg-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        /* Quick Facts Bar */
+        .quick-facts-bar {
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            margin-top: -60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .fact-item {
+            text-align: center;
+            border-right: 1px solid #eee;
+        }
+
+        .fact-item:last-child {
+            border-right: none;
+        }
+
+        .fact-item i {
+            color: var(--pkg-green);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .fact-item strong {
+            display: block;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .fact-item span {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Sticky Booking Bar */
+        .sticky-booking {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .sticky-booking.show {
+            transform: translateY(0);
+        }
+
+        .sticky-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sticky-price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--pkg-green);
+        }
+
+        .sticky-price span {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #666;
+        }
+
+        /* Itinerary Accordion */
+        .itinerary-container {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .iti-item {
+            border: 1px solid #eef0f3;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            background: #fafbfc;
+            transition: all 0.3s ease;
+        }
+
+        .iti-header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: white;
+        }
+
+        .iti-header h4 {
+            margin: 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .iti-day-circle {
+            width: 40px;
+            height: 40px;
+            background: var(--pkg-green);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .iti-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .iti-item.active {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border-color: var(--pkg-green);
+        }
+
+        .iti-item.active .iti-content {
+            padding: 10px 20px 25px 75px;
+            max-height: 1000px;
+        }
+
+        .iti-item.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        /* Highlights Grid */
+        .highlights-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .high-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+        }
+
+        .high-item.extra-highlight {
+            display: none;
+        }
+
+        .high-item i {
+            color: var(--pkg-orange);
+            font-size: 1.2rem;
+            margin-top: 4px;
+        }
+
+        .see-more-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-see-more {
+            background: transparent;
+            border: 2px solid var(--pkg-green);
+            color: var(--pkg-green);
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .btn-see-more:hover {
+            background: var(--pkg-green);
+            color: white;
+        }
+
+        /* Includes/Excludes */
+        .cost-section {
+            background: #f1f5f3;
+            border-radius: 20px;
+            padding: 50px;
+        }
+
+        .cost-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .cost-col h3 {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cost-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cost-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .cost-list li::before {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+        }
+
+        .inc-list li::before {
+            content: "\f00c";
+            color: var(--pkg-green);
+        }
+
+        .exc-list li::before {
+            content: "\f00d";
+            color: #dc3545;
+        }
+
+        /* Permit Notice */
+        .permit-notice {
+            background: linear-gradient(135deg, #1e3a5f, #155a48);
+            color: white;
+            border-radius: 16px;
+            padding: 30px 35px;
+            margin: 40px 0;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .permit-notice i {
+            font-size: 2rem;
+            color: #fbbf24;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .permit-notice h4 {
+            margin: 0 0 8px;
+            font-size: 1.15rem;
+        }
+
+        .permit-notice p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Photo Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 250px);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item.lg-col {
+            grid-column: span 2;
+        }
+
+        .gallery-item.lg-row {
+            grid-row: span 2;
+        }
+
+        @media (max-width: 992px) {
+            .cost-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .quick-facts-bar {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .fact-item {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 15px;
+            }
+
+            .fact-item:last-child {
+                border-bottom: none;
+            }
+
+            .sticky-inner {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .permit-notice {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== STICKY NAVBAR ===== -->
+    <nav id="navbar" class="navbar">
+
+        <!-- Main navbar -->
+        <div class="nav-main">
+            <div class="nav-container nav-main-inner">
+
+                <!-- Logo -->
+                <a href="index.html#home" class="nav-logo">
+                    <span class="logo-icon"><i class="fas fa-mountain"></i></span>
+                    <span class="logo-text">Himalaya<span class="logo-accent">Quest</span></span>
+                </a>
+
+                <!-- Desktop nav links -->
+                <ul class="nav-links" id="navLinks">
+
+                    <!-- Treks dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="index.html#treks" class="nav-link">
+                            Treks <i class="fas fa-chevron-down nav-arrow"></i>
+                        </a>
+                        <div class="dropdown">
+                            <div class="dropdown-inner">
+                                <div class="dropdown-col">
+                                    <p class="dropdown-heading">Featured Treks</p>
+                                    <a href="everest-base-camp.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-campground"></i></span>
+                                        <span><strong>Everest Base Camp</strong><small>14 Days · Challenging</small></span>
+                                    </a>
+                                    <a href="annapurna-circuit.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-mountain"></i></span>
+                                        <span><strong>Annapurna Circuit</strong><small>18 Days · Moderate</small></span>
+                                    </a>
+                                    <a href="langtang-valley.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-tree"></i></span>
+                                        <span><strong>Langtang Valley</strong><small>10 Days · Easy</small></span>
+                                    </a>
+                                    <a href="manaslu-circuit.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-compass"></i></span>
+                                        <span><strong>Manaslu Circuit</strong><small>16 Days · Challenging</small></span>
+                                    </a>
+                                </div>
+                                <div class="dropdown-col dropdown-col-cta">
+                                    <p class="dropdown-heading">Quick Actions</p>
+                                    <a href="index.html#filter" class="dropdown-link"><i class="fas fa-sliders-h"></i> Find My Trek</a>
+                                    <a href="departures.html" class="dropdown-link"><i class="fas fa-calendar-check"></i> View Departures</a>
+                                    <a href="index.html#plan" class="dropdown-link"><i class="fas fa-paper-plane"></i> Custom Trek</a>
+                                    <div class="dropdown-badge">
+                                        <i class="fas fa-tag"></i> Treks from <strong>$650</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Departures (direct) -->
+                    <li class="nav-item">
+                        <a href="departures.html" class="nav-link">Departures</a>
+                    </li>
+
+                    <!-- Destinations dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="destinations.html" class="nav-link">
+                            Destinations <i class="fas fa-chevron-down nav-arrow"></i>
+                        </a>
+                        <div class="dropdown dropdown-sm">
+                            <div class="dropdown-inner">
+                                <div class="dropdown-col">
+                                    <p class="dropdown-heading">Regions</p>
+                                    <a href="everest-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-hiking"></i></span><span><strong>Everest
+                                                Region</strong><small>12 treks available</small></span></a>
+                                    <a href="annapurna-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-mountain"></i></span><span><strong>Annapurna
+                                                Region</strong><small>9 treks available</small></span></a>
+                                    <a href="langtang-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-tree"></i></span><span><strong>Langtang
+                                                Region</strong><small>6 treks available</small></span></a>
+                                    <a href="manaslu-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-compass"></i></span><span><strong>Manaslu
+                                                Region</strong><small>5 treks available</small></span></a>
+                                    <a href="dolpa-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-paw"></i></span><span><strong>Dolpa
+                                                Region</strong><small>4 treks available</small></span></a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- About dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="about.html" class="nav-link">
+                            About <i class="fas fa-chevron-down nav-arrow"></i>
+                        </a>
+                        <div class="dropdown dropdown-sm">
+                            <div class="dropdown-inner">
+                                <div class="dropdown-col">
+                                    <p class="dropdown-heading">Explore</p>
+                                    <a href="about.html#story" class="dropdown-link"><i class="fas fa-info-circle"
+                                            style="color:var(--orange);margin-right:8px"></i> Our Story</a>
+                                    <a href="about.html#values" class="dropdown-link"><i class="fas fa-award"
+                                            style="color:var(--green);margin-right:8px"></i> Our Values</a>
+                                    <a href="about.html#team" class="dropdown-link"><i class="fas fa-users"
+                                            style="color:var(--orange);margin-right:8px"></i> Local Team</a>
+                                    <a href="index.html#why" class="dropdown-link"><i class="fas fa-award"
+                                            style="color:var(--green);margin-right:8px"></i> Why Choose Us</a>
+                                    <a href="index.html#reviews" class="dropdown-link"><i class="fas fa-star"
+                                            style="color:var(--orange);margin-right:8px"></i> Traveller Reviews</a>
+                                    <a href="index.html#blog" class="dropdown-link"><i class="fas fa-newspaper"
+                                            style="color:var(--green);margin-right:8px"></i> Travel Blog</a>
+                                    <a href="index.html#faq" class="dropdown-link"><i class="fas fa-question-circle"
+                                            style="color:var(--orange);margin-right:8px"></i> FAQs</a>
+                                    <a href="contact.html" class="dropdown-link"><i class="fas fa-headset"
+                                            style="color:var(--green);margin-right:8px"></i> Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Contact (direct) -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+
+                </ul><!-- /nav-links -->
+
+                <!-- Right side actions -->
+                <div class="nav-actions">
+                    <a href="contact.html" class="nav-cta">
+                        <i class="fas fa-paper-plane"></i> Plan My Trip
+                    </a>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-links">
+                <li><a href="index.html#treks">🏔 Featured Treks</a></li>
+                <li><a href="departures.html">📅 Departures</a></li>
+                <li><a href="destinations.html">📍 Destinations</a></li>
+                <li><a href="about.html">⭐ About Us</a></li>
+                <li><a href="contact.html">📞 Contact</a></li>
+            </ul>
+            <a href="contact.html" class="mobile-cta">Plan My Trip →</a>
+        </div>
+
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="pkg-hero">
+        <div class="pkg-hero-bg"></div>
+        <div class="pkg-hero-overlay"></div>
+        <div class="pkg-hero-content">
+            <span class="pkg-badge badge-challenging">Challenging Trek</span>
+            <h1>Manaslu Circuit Trek</h1>
+            <p>Circle the world's 8th highest peak — a remote, restricted-area odyssey over the mighty Larkya La Pass.</p>
+            <div class="hero-btns">
+                <a href="#book" class="btn-primary">Book This Trek</a>
+                <a href="contact.html" class="btn-outline">Customize Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- ===== QUICK FACTS BAR ===== -->
+        <div class="quick-facts-bar">
+            <div class="fact-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Duration</span>
+                <strong>16 Days</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-mountain"></i>
+                <span>Max Altitude</span>
+                <strong>5,160m</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-signal"></i>
+                <span>Difficulty</span>
+                <strong>Challenging</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Region</span>
+                <strong>Manaslu</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-cloud-sun"></i>
+                <span>Best Season</span>
+                <strong>Spring / Autumn</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TREK OVERVIEW ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" style="text-align: left; max-width: 800px; margin-left: 0;">
+                <span class="section-tag">Overview</span>
+                <h2 class="section-title">Nepal's Last <span class="accent">Great Wilderness</span></h2>
+            </div>
+            <div class="overview-grid"
+                style="display: grid; grid-template-columns: 3fr 2fr; gap: 50px; align-items: start;">
+                <div class="overview-text" id="overviewText">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 20px;">
+                        The Manaslu Circuit Trek is Nepal's finest off-the-beaten-path adventure — a <strong>complete circumnavigation of Manaslu (8,163m)</strong>, the world's eighth-highest mountain. Unlike the busier Everest and Annapurna trails, Manaslu remains a restricted area trek, keeping visitor numbers low and the experience genuinely wild and authentic.
+                    </p>
+                    <div id="overviewMore" style="display: none;">
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 20px;">
+                            The route ascends through a stunning succession of landscapes — from the subtropical lowlands of the Budhi Gandaki gorge through dense rhododendron forests, past remote Tibetan-influenced villages and ancient monasteries, into the stark, spectacular high-altitude terrain around <strong>Samagaon (3,530m)</strong> and <strong>Samdo (3,875m)</strong>. Every day brings a completely different world.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: #444;">
+                            The undisputed highlight is crossing <strong>Larkya La Pass (5,160m)</strong> — a grueling, exhilarating pre-dawn ascent rewarded by one of the most breathtaking panoramas in all of Nepal: Manaslu, Himlung Himal, Cheo Himal, Annapurna II, and dozens of surrounding peaks, all bathed in alpenglow. The descent into the verdant Marsyangdi Valley completes a circuit that most trekkers describe as the experience of a lifetime.
+                        </p>
+                    </div>
+                    <button id="overviewReadMore" class="btn-read-more" style="background: transparent; border: none; color: var(--pkg-green); font-weight: 700; cursor: pointer; padding: 0; font-size: 1rem; margin-top: 10px; display: flex; align-items: center; gap: 8px;">
+                        <span>Read More</span> <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <!-- Permit Notice -->
+                    <div class="permit-notice">
+                        <i class="fas fa-id-card"></i>
+                        <div>
+                            <h4>Restricted Area Trek</h4>
+                            <p>The Manaslu Circuit requires a special <strong>Manaslu Restricted Area Permit (RAP)</strong> in addition to the Manaslu Conservation Area Permit (MCAP), ACAP, and TIMS. By regulation, trekkers <strong>must</strong> be accompanied by a licensed guide at all times. All permits are arranged and included in your package.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-table"
+                    style="background: #f8f9fa; padding: 30px; border-radius: 15px; border-left: 5px solid var(--pkg-green);">
+                    <h3 style="margin-bottom: 20px; font-size: 1.5rem;">Trip Facts</h3>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Group Size</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">2–10 Persons</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Accommodation</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Teahouses / Lodges</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Meals</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">B, L, D during trekking</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Transportation</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Jeep / Bus</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Max Elevation</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">5,160m (Larkya La)</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Difficulty</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Challenging</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px 0; color: #666;">Guide Required</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Mandatory (by law)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HIGHLIGHTS ===== -->
+    <section class="section" style="background: #fff;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Highlights</span>
+                <h2 class="section-title">Why Manaslu is <span class="accent">Unmissable</span></h2>
+            </div>
+            <ul class="highlights-list" id="highlightsList">
+                <li class="high-item">
+                    <i class="fas fa-mountain"></i>
+                    <div>
+                        <strong>Larkya La Pass (5,160m)</strong>
+                        <p>One of Nepal's highest and most dramatic trekking passes — a pre-dawn crossing rewarded by a 360&deg; Himalayan panorama.</p>
+                    </div>
+                </li>
+                <li class="high-item">
+                    <i class="fas fa-eye"></i>
+                    <div>
+                        <strong>Manaslu (8,163m) Views</strong>
+                        <p>Circle the world's 8th highest peak and watch it transform from every angle — south face, north face, and glacier-draped flanks.</p>
+                    </div>
+                </li>
+                <li class="high-item">
+                    <i class="fas fa-campground"></i>
+                    <div>
+                        <strong>Manaslu Base Camp (4,480m)</strong>
+                        <p>An optional acclimatization hike from Samagaon brings you face-to-face with Manaslu's massive south wall and crevassed glacier.</p>
+                    </div>
+                </li>
+                <li class="high-item">
+                    <i class="fas fa-water"></i>
+                    <div>
+                        <strong>Birendra Lake</strong>
+                        <p>A stunning glacial lake near Samagaon, reflecting the snow-capped peaks above and encircled by prayer flags and mani stones.</p>
+                    </div>
+                </li>
+                <li class="high-item">
+                    <i class="fas fa-globe-asia"></i>
+                    <div>
+                        <strong>Restricted Area — Off the Beaten Path</strong>
+                        <p>Special permits mean far fewer trekkers than on Everest or Annapurna. Manaslu offers a raw, uncrowded Himalayan experience.</p>
+                    </div>
+                </li>
+                <li class="high-item">
+                    <i class="fas fa-pray"></i>
+                    <div>
+                        <strong>Tibetan Buddhist Culture</strong>
+                        <p>Pass through ancient villages like Namrung, Samagaon, and Samdo — a living window into Tibetan heritage, monasteries, and traditions.</p>
+                    </div>
+                </li>
+                <li class="high-item extra-highlight">
+                    <i class="fas fa-route"></i>
+                    <div>
+                        <strong>Budhi Gandaki Gorge</strong>
+                        <p>Trek through one of Nepal's most dramatic river gorges — steep canyon walls, suspension bridges, and roaring waterfalls.</p>
+                    </div>
+                </li>
+                <li class="high-item extra-highlight">
+                    <i class="fas fa-leaf"></i>
+                    <div>
+                        <strong>Manaslu Conservation Area</strong>
+                        <p>A rich biodiversity hotspot — snow leopards, Himalayan tahr, red pandas, and over 110 species of birds call this region home.</p>
+                    </div>
+                </li>
+                <li class="high-item extra-highlight">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <div>
+                        <strong>Tsum Valley Extension</strong>
+                        <p>Combine with the mystical Tsum Valley — a hidden Himalayan sanctuary with ancient monasteries, accessible as an add-on.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="see-more-container">
+                <button class="btn-see-more" id="btnSeeMore">See More Highlights</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ITINERARY ===== -->
+    <section class="section bg-light" id="itinerary">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Day-by-Day</span>
+                <h2 class="section-title">Detailed <span class="accent">Itinerary</span></h2>
+                <p class="section-sub">16 days, every step planned — click any day to expand</p>
+            </div>
+
+            <div class="itinerary-container">
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">01</span> Arrival in Kathmandu (1,400m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        Welcome to Nepal! Your HimalayaQuest representative will meet you at Tribhuvan International Airport and transfer you to your hotel in Thamel. In the evening, attend a comprehensive briefing session to review the itinerary, gear checklist, permits, and safety protocols. Overnight in Kathmandu.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">02</span> Drive Kathmandu &rarr; Soti Khola (700m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        An early morning jeep drive of approximately 8&ndash;9 hours takes you west to Soti Khola, the starting point of the Manaslu Circuit. The journey passes through the Prithvi Highway and the market town of Arughat before reaching the trailhead on the banks of the Budhi Gandaki river. The subtropical warmth is a striking contrast to what lies ahead. Overnight in Soti Khola.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">03</span> Soti Khola &rarr; Machha Khola (869m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        The trek begins by descending to the Budhi Gandaki and then following the river north through dense subtropical jungle. The trail crosses numerous suspension bridges and passes through small Gurung villages. The canyon walls begin to close in as you enter the dramatic gorge section. Walking time: ~5&ndash;6 hours.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">04</span> Machha Khola &rarr; Jagat (1,340m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        The gorge deepens dramatically as you push deeper into the restricted area. The trail involves multiple river crossings on swinging bridges, some narrow cliff-edge sections, and several steep climbs. Jagat is the first permit checkpoint, where your Restricted Area Permit will be inspected. Walking time: ~6&ndash;7 hours.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">05</span> Jagat &rarr; Deng (1,804m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        Continuing through the gorge, the trail passes the village of Philim — an important Gurung settlement with impressive chortens and mani walls — before reaching Deng. The cultural character of the region shifts noticeably here as Tibetan Buddhist influence begins to appear. Walking time: ~6&ndash;7 hours.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">06</span> Deng &rarr; Namrung (2,630m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        The valley opens up and the first major Himalayan peaks appear. Pass through the village of Ghap, with its richly decorated gompa and long mani walls. By Namrung, you are fully in the high mountains — the first clear views of the Himalayan range appear above the treeline and the temperature drops noticeably. Walking time: ~5&ndash;6 hours.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">07</span> Namrung &rarr; Samagaon (3,530m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        A magnificent day as Manaslu (8,163m) dominates the skyline ahead. Pass through the villages of Lihi and Sho with their ancient monasteries and mani stone walls before reaching Samagaon, the most important village on the circuit. The snowy south face of Manaslu and its satellite peaks tower directly above the village. Walking time: ~5&ndash;6 hours.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">08</span> Acclimatization &mdash; Samagaon &rarr; Manaslu Base Camp (4,480m) or Birendra Lake</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        A critical rest day for acclimatization. Two outstanding options: hike to <strong>Manaslu Base Camp (4,480m)</strong> for an up-close encounter with the mountain's massive glacier and icefall, or take the gentler trail to <strong>Birendra Lake</strong> — a stunning glacial lake fringed with prayer flags beneath Manaslu's southern face. Both options offer extraordinary mountain scenery. Overnight in Samagaon.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">09</span> Samagaon &rarr; Samdo (3,875m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        A shorter day that ascends gently along the upper Budhi Gandaki towards the Tibetan border. Samdo is the last permanent settlement before Larkya La and has a distinctly Tibetan character — flat-roofed stone houses, yak herds, and a frontier atmosphere. On a clear day you can see into Tibet. Walking time: ~3&ndash;4 hours.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">10</span> Samdo &rarr; Dharmasala / Larkya La Base Camp (4,460m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        A short but important acclimatization day — move up to Dharmasala (also called Larkya La Base Camp), a high-altitude camp perched at 4,460m. Arrive early, rest thoroughly, and prepare your gear for tomorrow's pass crossing. Dharmasala is a basic teahouse camp with no electricity; the night sky is extraordinary. Walking time: ~4&ndash;5 hours.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">11</span> Dharmasala &rarr; Larkya La Pass (5,160m) &rarr; Bimthang (3,590m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        The biggest day of the trek — and one of the most memorable days you will ever spend in the mountains. Depart at 4&ndash;5 AM by headtorch to reach <strong>Larkya La Pass (5,160m)</strong> at sunrise, when the views are most dramatic: Manaslu, Himlung Himal (7,126m), Cheo Himal, Annapurna II, and a sea of peaks filling the horizon in every direction. The descent to Bimthang is long but the meadows and glacier views make every step worthwhile. Walking time: ~8&ndash;9 hours.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">12</span> Bimthang &rarr; Tilije (2,300m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        A long descent through the Marsyangdi Valley with panoramic views of the Annapurna range ahead. The landscape shifts from alpine meadows to oak and rhododendron forest as you drop sharply in altitude. Pass through Kharche and Dharapani before reaching Tilije, a warm, low-altitude village where you can finally relax. Walking time: ~5&ndash;6 hours.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">13</span> Tilije &rarr; Dharapani &rarr; Drive to Besisahar (760m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        A short final walking section brings you to Dharapani, where the Manaslu and Annapurna Circuit trails converge. From here, a jeep or bus takes you south along the Marsyangdi Valley to Besisahar. The drive passes through terraced hillsides and river valleys, offering one last glimpse of the Himalayan giants behind you. Overnight in Besisahar.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">14</span> Drive Besisahar &rarr; Kathmandu (1,400m)</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        An approximately 6&ndash;7 hour drive returns you to Kathmandu along the Prithvi Highway. Arrive in Thamel in the afternoon with time to clean up, rest, and celebrate the completion of an extraordinary circuit. Your guide will join you for a celebratory farewell dinner. Overnight in Kathmandu.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">15</span> Kathmandu &mdash; Free Day / Sightseeing</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        A well-earned free day in Kathmandu. Optional guided sightseeing to the UNESCO World Heritage Sites: Pashupatinath Temple, Boudhanath Stupa, or Swayambhunath (Monkey Temple). Alternatively, browse Thamel for trekking gear, handicrafts, and souvenirs. Overnight in Kathmandu.
+                    </div>
+                </div>
+
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><span class="iti-day-circle">16</span> Final Departure</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        Transfer to Tribhuvan International Airport for your international departure. Your HimalayaQuest guide will see you off with a warm Namaste. We hope the Manaslu Circuit has left an indelible mark on your heart — and that the mountains will call you back soon.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COST SECTION ===== -->
+    <section class="section">
+        <div class="container cost-section">
+            <div class="cost-grid" id="book">
+                <div class="cost-col">
+                    <h3><i class="fas fa-check-circle accent"></i> Cost Includes</h3>
+                    <ul class="cost-list inc-list">
+                        <li>Professional licensed trekking guide and porter</li>
+                        <li>All permits: Manaslu RAP, MCAP, ACAP &amp; TIMS card</li>
+                        <li>Ground transportation (Kathmandu&ndash;Soti Khola &amp; Besisahar&ndash;Kathmandu)</li>
+                        <li>Accommodation in teahouses / lodges during trek</li>
+                        <li>3 meals per day (Breakfast, Lunch, Dinner) during trek</li>
+                        <li>Airport transfers and 2 nights hotel in Kathmandu</li>
+                        <li>First aid kit and emergency oxygen</li>
+                    </ul>
+                </div>
+                <div class="cost-col">
+                    <h3><i class="fas fa-times-circle" style="color:#dc3545"></i> Cost Excludes</h3>
+                    <ul class="cost-list exc-list">
+                        <li>International airfare and travel insurance</li>
+                        <li>Personal expenses (Wi-Fi, hot shower, battery charge)</li>
+                        <li>Tips for guide and porter (expected and appreciated)</li>
+                        <li>Bar bills and beverages</li>
+                        <li>Nepal Entry Visa fee (~$50 for 30 days)</li>
+                        <li>Optional Tsum Valley extension</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PHOTO GALLERY ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visuals</span>
+                <h2 class="section-title">Gallery from <span class="accent">The Circuit</span></h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item lg-col lg-row">
+                    <img src="manaslu.png" alt="Manaslu Circuit Trek" />
+                </div>
+                <div class="gallery-item">
+                    <img src="everest.png" alt="Mountain Views" />
+                </div>
+                <div class="gallery-item">
+                    <img src="langtang.png" alt="Himalayan Landscape" />
+                </div>
+                <div class="gallery-item lg-col">
+                    <img src="hero.png" alt="Trekking Nepal" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked <span class="accent">Questions</span></h2>
+                <p class="section-sub">Everything you need to know before you hit the trail</p>
+            </div>
+            <div class="faq-layout">
+
+                <div class="faq-categories">
+                    <button class="faq-cat-btn active" data-cat="all">All Questions</button>
+                    <button class="faq-cat-btn" data-cat="booking">Booking</button>
+                    <button class="faq-cat-btn" data-cat="preparation">Preparation</button>
+                    <button class="faq-cat-btn" data-cat="safety">Safety</button>
+                    <button class="faq-cat-btn" data-cat="permits">Permits</button>
+                </div>
+
+                <div class="faq-list" id="faqList">
+
+                    <div class="faq-item" data-cat="booking">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-q-icon"><i class="fas fa-calendar-check"></i></span>
+                            <span>How far in advance should I book my trek?</span>
+                            <span class="faq-chevron"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We recommend booking at least <strong>2–3 months in advance</strong>, especially for peak
+                                season
+                                (March–May and September–November). Popular treks like Everest Base Camp fill up
+                                quickly. However, we
+                                can sometimes accommodate last-minute bookings — contact us and we'll do our best!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-cat="booking">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-q-icon"><i class="fas fa-credit-card"></i></span>
+                            <span>What is your cancellation and refund policy?</span>
+                            <span class="faq-chevron"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer a <strong>full refund</strong> if you cancel 30+ days before the trek start
+                                date.
+                                Cancellations 15–29 days before receive a 50% refund. Cancellations within 14 days are
+                                non-refundable.
+                                However, we're always happy to reschedule your trek at no extra cost.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-cat="preparation">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-q-icon"><i class="fas fa-dumbbell"></i></span>
+                            <span>What fitness level is required for trekking in Nepal?</span>
+                            <span class="faq-chevron"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Fitness requirements vary by trek. Easy treks like <strong>Langtang Valley</strong> need
+                                basic fitness.
+                                Moderate treks like Annapurna Circuit require regular cardio training 2–3 months prior.
+                                Challenging
+                                treks like <strong>Everest Base Camp</strong> demand consistent hiking, running, and
+                                stair-climbing
+                                exercise for 3–4 months. No prior trekking experience is needed — just good physical
+                                conditioning.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-cat="preparation">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-q-icon"><i class="fas fa-suitcase-rolling"></i></span>
+                            <span>What should I pack for a Himalayan trek?</span>
+                            <span class="faq-chevron"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Essential packing includes: <strong>layered clothing</strong> (moisture-wicking base,
+                                insulating
+                                mid-layer, waterproof outer shell), quality trekking boots, trekking poles, a 35–45L
+                                daypack, sleeping
+                                bag (rated to -10°C for high-altitude treks), sun protection, and a first aid kit. We
+                                provide a detailed
+                                packing list upon booking. Gear can also be rented affordably in Kathmandu's Thamel
+                                district.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-cat="preparation">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-q-icon"><i class="fas fa-calendar-alt"></i></span>
+                            <span>What is the best time of year to trek in Nepal?</span>
+                            <span class="faq-chevron"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nepal has two ideal trekking windows: <strong>Spring (March–May)</strong> — clear skies,
+                                blooming
+                                rhododendrons, warm temperatures; and <strong>Autumn (September–November)</strong> — the
+                                most popular
+                                season with exceptional visibility and crystal-clear mountain views. Winter treks
+                                (Dec–Feb) are possible
+                                at lower altitudes and offer solitude. Monsoon (June–August) is generally avoided for
+                                most high-altitude
+                                treks.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-cat="safety">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-q-icon"><i class="fas fa-heartbeat"></i></span>
+                            <span>How do you handle altitude sickness (AMS)?</span>
+                            <span class="faq-chevron"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Altitude Mountain Sickness (AMS) is a serious concern above 3,000m. Our guides are
+                                <strong>Wilderness
+                                    First Aid (WFA) certified</strong> and trained to monitor symptoms closely. We
+                                follow a strict
+                                acclimatization schedule with rest days built in ("climb high, sleep low"). All guides
+                                carry pulse
+                                oximeters and emergency oxygen. In severe cases, immediate descent and helicopter
+                                evacuation is
+                                arranged. We strongly advise purchasing <strong>comprehensive travel insurance</strong>
+                                that covers
+                                high-altitude evacuation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-cat="safety">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-q-icon"><i class="fas fa-shield-alt"></i></span>
+                            <span>Is trekking in Nepal safe for solo travelers and women?</span>
+                            <span class="faq-chevron"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nepal is considered one of the <strong>safest adventure travel destinations in
+                                    Asia</strong>. Solo
+                                travelers — including women — trek successfully every year. On our group treks, you're
+                                never alone. We
+                                recommend staying on established routes, keeping emergency contacts updated, and
+                                registering with TIMS
+                                (Trekkers' Information Management System). Our guides are personally vetted and
+                                background-checked for
+                                your peace of mind.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-cat="permits">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-q-icon"><i class="fas fa-file-alt"></i></span>
+                            <span>What permits are required for trekking in Nepal?</span>
+                            <span class="faq-chevron"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most treks require a <strong>TIMS Card</strong> (Trekkers' Information Management System)
+                                and a
+                                <strong>National Park / Conservation Area Permit</strong>. For example, Everest treks
+                                need a Sagarmatha
+                                National Park permit, while Annapurna treks need an ACAP permit. Restricted area treks
+                                (Manaslu, Upper
+                                Dolpa) require additional special permits. <strong>We handle all permits on your
+                                    behalf</strong> —
+                                just provide your passport copy and we take care of the rest.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-cat="permits">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-q-icon"><i class="fas fa-passport"></i></span>
+                            <span>Do I need a visa to enter Nepal?</span>
+                            <span class="faq-chevron"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most nationalities can obtain a <strong>Nepal Tourist Visa on arrival</strong> at
+                                Tribhuvan
+                                International Airport (Kathmandu) or at land border crossings. Fees are approximately
+                                <strong>$30 for 15
+                                    days, $50 for 30 days, $125 for 90 days</strong>. You'll need a valid passport (6+
+                                months),
+                                passport-size photos, and the visa fee in cash (USD preferred). We provide a complete
+                                pre-arrival
+                                checklist with your booking confirmation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-cat="booking">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-q-icon"><i class="fas fa-users"></i></span>
+                            <span>Can I join a trek as a solo traveler or do I need a group?</span>
+                            <span class="faq-chevron"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! Solo travelers are warmly welcomed. You can <strong>join one of our scheduled
+                                    group
+                                    departures</strong> to meet like-minded adventurers, or book a <strong>private
+                                    custom trek</strong>
+                                with a dedicated guide and porter just for you. Private treks can be customized for
+                                pace, itinerary, and
+                                dates. We specialize in making solo travel comfortable, social, and safe.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reviews</span>
+                <h2 class="section-title">What Our <span class="accent">Trekkers Say</span></h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Crossing Larkya La at sunrise was the single most powerful moment of my trekking life. The solitude, the scale, the silence — Manaslu is everything the busier trails are not. HimalayaQuest's guide was exceptional."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar" style="background:var(--pkg-green)">TM</div>
+                        <div class="reviewer-info"><strong>Thomas Müller</strong><span>Munich, Germany</span></div>
+                    </div>
+                </div>
+                <div class="review-card review-featured">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I've done Everest Base Camp and Annapurna Circuit, and Manaslu beats both for raw adventure. No crowds, incredible culture, and the Budhi Gandaki gorge is jaw-dropping. Our guide Ram made every day unforgettable."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar" style="background:var(--pkg-orange)">SC</div>
+                        <div class="reviewer-info"><strong>Sophie Clément</strong><span>Lyon, France</span></div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The restricted area permit is worth every dollar. Manaslu felt like the real Nepal — untouched, welcoming, and humbling. HimalayaQuest handled everything seamlessly from permits to teahouses. Will be back for Tsum Valley!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar" style="background:#7c3aed">AK</div>
+                        <div class="reviewer-info"><strong>Aiko Kobayashi</strong><span>Tokyo, Japan</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="cta-section">
+        <div class="cta-bg" style="background-image:url('cta.png')"></div>
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+            <h2>Ready for the <span class="accent">Manaslu Circuit?</span></h2>
+            <p>Join our next group departure or design a fully private Manaslu experience — including the Tsum Valley.</p>
+            <div class="hero-btns" style="margin-top:20px">
+                <a href="contact.html" class="btn-primary">Book This Trek</a>
+                <a href="contact.html" class="btn-outline">Plan Custom Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STICKY BOOKING BAR ===== -->
+    <div class="sticky-booking" id="stickyBooking">
+        <div class="container sticky-inner">
+            <div class="sticky-price">From $1,100 <span>/ person</span></div>
+            <div class="hero-btns" style="margin:0">
+                <a href="contact.html" class="btn-primary" style="padding: 10px 25px;">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-mountain"></i>
+                        Himalaya<span>Quest</span>
+                    </div>
+                    <p>Nepal's premier adventure trekking company. We connect passionate travelers with the roof of the
+                        world, safely and sustainably.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#treks">All Treks</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="index.html#blog">Travel Blog</a></li>
+                        <li><a href="contact.html">Plan My Trip</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Trek Regions</h4>
+                    <ul>
+                        <li><a href="everest-region.html">Everest Region</a></li>
+                        <li><a href="annapurna-region.html">Annapurna Region</a></li>
+                        <li><a href="langtang-region.html">Langtang Region</a></li>
+                        <li><a href="manaslu-region.html">Manaslu Region</a></li>
+                        <li><a href="dolpa-region.html">Dolpa Region</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone"></i> +977 1 4701234</li>
+                        <li><i class="fas fa-envelope"></i> info@himalayaquest.com</li>
+                        <li><i class="fas fa-clock"></i> Mon&ndash;Sat: 9AM &ndash; 6PM (NPT)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 HimalayaQuest Nepal. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script>
+        // Itinerary Accordion
+        document.querySelectorAll('.iti-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.iti-item').forEach(i => i.classList.remove('active'));
+                if (!isActive) { item.classList.add('active'); }
+            });
+        });
+
+        // Sticky Booking Bar
+        const stickyBar = document.getElementById('stickyBooking');
+        if (stickyBar) {
+            window.addEventListener('scroll', () => {
+                stickyBar.classList.toggle('show', window.scrollY > 600);
+            });
+        }
+
+        // See More Highlights
+        const btnSeeMore = document.getElementById('btnSeeMore');
+        const extraHighlights = document.querySelectorAll('.extra-highlight');
+        if (btnSeeMore) {
+            btnSeeMore.addEventListener('click', () => {
+                const isHidden = extraHighlights[0].style.display === 'none' || extraHighlights[0].style.display === '';
+                extraHighlights.forEach(item => { item.style.display = isHidden ? 'flex' : 'none'; });
+                btnSeeMore.textContent = isHidden ? 'See Less' : 'See More Highlights';
+            });
+        }
+
+        // Overview Read More
+        const overviewReadMore = document.getElementById('overviewReadMore');
+        const overviewMore = document.getElementById('overviewMore');
+        if (overviewReadMore && overviewMore) {
+            overviewReadMore.addEventListener('click', () => {
+                const isHidden = overviewMore.style.display === 'none';
+                overviewMore.style.display = isHidden ? 'block' : 'none';
+                overviewReadMore.querySelector('span').textContent = isHidden ? 'Read Less' : 'Read More';
+                overviewReadMore.querySelector('i').className = isHidden ? 'fas fa-chevron-up' : 'fas fa-chevron-down';
+            });
+        }
+    </script>
+</body>
+
+</html>
+
+
