@@ -115,11 +115,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // ── Trek Data ──
 const treks = [
-  { name: "Everest Base Camp Trek", region: "everest", days: 14, diff: "challenging", price: 1200, img: "everest.png", badge: "badge-challenging", diffClass: "diff-hard", diffLabel: "Challenging" },
-  { name: "Annapurna Circuit Trek", region: "annapurna", days: 18, diff: "moderate", price: 900, img: "annapurna.png", badge: "badge-moderate", diffClass: "diff-mod", diffLabel: "Moderate" },
-  { name: "Langtang Valley Trek", region: "langtang", days: 10, diff: "easy", price: 650, img: "langtang.png", badge: "badge-easy", diffClass: "diff-easy", diffLabel: "Easy" },
-  { name: "Manaslu Circuit Trek", region: "manaslu", days: 16, diff: "challenging", price: 1100, img: "manaslu.png", badge: "badge-challenging", diffClass: "diff-hard", diffLabel: "Challenging" },
-
+  { name: "Everest Base Camp Trek",   region: "everest",   days: 14, diff: "challenging", price: 1200, img: "everest.png",   badge: "badge-challenging", diffClass: "diff-hard", diffLabel: "Challenging", url: "everest-base-camp.html" },
+  { name: "Annapurna Circuit Trek",   region: "annapurna", days: 18, diff: "moderate",    price: 900,  img: "annapurna.png", badge: "badge-moderate",    diffClass: "diff-mod",  diffLabel: "Moderate",    url: "annapurna-circuit.html" },
+  { name: "Annapurna Base Camp Trek", region: "annapurna", days: 11, diff: "moderate",    price: 850,  img: "annapurna.png", badge: "badge-moderate",    diffClass: "diff-mod",  diffLabel: "Moderate",    url: "abc-trek.html" },
+  { name: "Langtang Valley Trek",     region: "langtang",  days: 10, diff: "easy",        price: 650,  img: "langtang.png",  badge: "badge-easy",       diffClass: "diff-easy", diffLabel: "Easy",        url: "langtang-valley.html" },
+  { name: "Manaslu Circuit Trek",     region: "manaslu",   days: 16, diff: "challenging", price: 1100, img: "manaslu.png",   badge: "badge-challenging", diffClass: "diff-hard", diffLabel: "Challenging", url: "manaslu-circuit.html" },
+  { name: "Upper Mustang Trek",      region: "mustang",   days: 14, diff: "moderate",    price: 1650, img: "cta.png",       badge: "badge-moderate",    diffClass: "diff-mod",  diffLabel: "Moderate",    url: "upper-mustang-trek.html" },
 ];
 
 function buildCard(trek) {
@@ -128,7 +129,7 @@ function buildCard(trek) {
       <div class="trek-img-wrap">
         <img src="${trek.img}" alt="${trek.name}" class="trek-img" loading="lazy" />
         <div class="trek-badge ${trek.badge}">${trek.diffLabel}</div>
-        <div class="trek-overlay"><a href="#" class="btn-view">View Details <i class="fas fa-arrow-right"></i></a></div>
+        <div class="trek-overlay"><a href="${trek.url}" class="btn-view">View Details <i class="fas fa-arrow-right"></i></a></div>
       </div>
       <div class="trek-body">
         <h3 class="trek-name">${trek.name}</h3>
@@ -139,7 +140,7 @@ function buildCard(trek) {
         <div class="trek-diff ${trek.diffClass}"><i class="fas fa-signal"></i> ${trek.diffLabel}</div>
         <div class="trek-footer">
           <div class="trek-price">From <strong>$${trek.price.toLocaleString()}</strong></div>
-          <a href="#" class="btn-sm">View Details</a>
+          <a href="${trek.url}" class="btn-sm">View Details</a>
         </div>
       </div>
     </div>`;
