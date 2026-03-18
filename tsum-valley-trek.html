@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tsum Valley Trek 2026 | 18 Days Sacred Hidden Valley | HimalayaQuest</title>
+    <meta name="description"
+        content="Discover the sacred Tsum Valley with HimalayaQuest. An 18-day journey into a hidden Buddhist sanctuary, featuring ancient monasteries, Milarepa's cave, and stunning Ganesh Himal views." />
+    <meta name="keywords"
+        content="Tsum Valley Trek, Hidden Valley Nepal, Mu Gompa, Milarepa Cave, Ganesh Himal, Buddhist trekking, restricted area trek" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        /* Page Specific Styles */
+        :root {
+            --pkg-green: #155a48;
+            --pkg-orange: #ff7a00;
+        }
+
+        .pkg-hero {
+            height: 70vh;
+            min-height: 500px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .pkg-hero-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('manaslu.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            transform: scale(1.1);
+        }
+
+        .pkg-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3));
+            z-index: 0;
+        }
+
+        .pkg-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .pkg-badge {
+            background: var(--pkg-orange);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .pkg-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            margin-bottom: 15px;
+            line-height: 1.1;
+        }
+
+        .pkg-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        /* Quick Facts Bar */
+        .quick-facts-bar {
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            margin-top: -60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .fact-item {
+            text-align: center;
+            border-right: 1px solid #eee;
+        }
+
+        .fact-item:last-child {
+            border-right: none;
+        }
+
+        .fact-item i {
+            color: var(--pkg-green);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .fact-item strong {
+            display: block;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .fact-item span {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Sticky Booking Bar */
+        .sticky-booking {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .sticky-booking.show {
+            transform: translateY(0);
+        }
+
+        .sticky-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Itinerary Accordion */
+        .itinerary-container {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .iti-item {
+            border: 1px solid #eef0f3;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            background: #fafbfc;
+            transition: all 0.3s ease;
+        }
+
+        .iti-header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: white;
+        }
+
+        .iti-header h4 {
+            margin: 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .iti-day-circle {
+            width: 40px;
+            height: 40px;
+            background: var(--pkg-green);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .iti-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .iti-item.active .iti-content {
+            padding: 10px 20px 25px 75px;
+            max-height: 1000px;
+        }
+
+        .iti-item.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        /* Highlights Grid */
+        .highlights-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .high-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+        }
+
+        .high-item.extra-highlight {
+            display: none;
+        }
+
+        .high-item i {
+            color: var(--pkg-orange);
+            font-size: 1.2rem;
+            margin-top: 4px;
+        }
+
+        /* Permit Notice */
+        .permit-notice {
+            background: linear-gradient(135deg, #1e3a5f, #155a48);
+            color: white;
+            border-radius: 16px;
+            padding: 30px 35px;
+            margin: 40px 0;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .permit-notice i {
+            font-size: 2rem;
+            color: #fbbf24;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .permit-notice h4 {
+            margin: 0 0 8px;
+            font-size: 1.15rem;
+        }
+
+        .permit-notice p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .quick-facts-bar {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .fact-item {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 15px;
+            }
+
+            .fact-item:last-child {
+                border-bottom: none;
+            }
+
+            .permit-notice {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== STICKY NAVBAR ===== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-main">
+            <div class="nav-container nav-main-inner">
+                <a href="index.html#home" class="nav-logo">
+                    <span class="logo-icon"><i class="fas fa-mountain"></i></span>
+                    <span class="logo-text">Himalaya<span class="logo-accent">Quest</span></span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li class="nav-item has-dropdown">
+                        <a href="index.html#treks" class="nav-link">
+                            Treks <i class="fas fa-chevron-down nav-arrow"></i>
+                        </a>
+                        <div class="dropdown">
+                            <div class="dropdown-inner">
+                                <div class="dropdown-col">
+                                    <p class="dropdown-heading">Featured Treks</p>
+                                    <a href="everest-base-camp.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-campground"></i></span>
+                                        <span><strong>Everest Base Camp</strong><small>14 Days · Challenging</small></span>
+                                    </a>
+                                    <a href="annapurna-circuit.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-mountain"></i></span>
+                                        <span><strong>Annapurna Circuit</strong><small>18 Days · Moderate</small></span>
+                                    </a>
+                                    <a href="abc-trek.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-sun"></i></span>
+                                        <span><strong>Annapurna Base Camp</strong><small>11 Days · Moderate</small></span>
+                                    </a>
+                                    <a href="ghorepani-poon-hill.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-binoculars"></i></span>
+                                        <span><strong>Ghorepani Poon Hill</strong><small>5 Days · Easy</small></span>
+                                    </a>
+                                    <a href="langtang-valley.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-tree"></i></span>
+                                        <span><strong>Langtang Valley</strong><small>10 Days · Easy</small></span>
+                                    </a>
+                                    <a href="gosainkunda-lake-trek.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-water"></i></span>
+                                        <span><strong>Gosainkunda Lake</strong><small>8 Days · Moderate</small></span>
+                                    </a>
+                                    <a href="tamang-heritage-trail.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-users"></i></span>
+                                        <span><strong>Tamang Heritage</strong><small>8 Days · Easy</small></span>
+                                    </a>
+                                    <a href="manaslu-circuit.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-compass"></i></span>
+                                        <span><strong>Manaslu Circuit</strong><small>16 Days · Challenging</small></span>
+                                    </a>
+                                    <a href="tsum-valley-trek.html" class="dropdown-link nav-active">
+                                        <span class="dlink-icon"><i class="fas fa-peace"></i></span>
+                                        <span><strong>Tsum Valley Trek</strong><small>18 Days · Moderate</small></span>
+                                    </a>
+                                    <a href="upper-mustang-trek.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-sun"></i></span>
+                                        <span><strong>Upper Mustang Trek</strong><small>14 Days · Moderate</small></span>
+                                    </a>
+                                    <a href="gokyo-lakes.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-water"></i></span>
+                                        <span><strong>Gokyo Lakes Trek</strong><small>14 Days · Moderate</small></span>
+                                    </a>
+                                </div>
+                                <div class="dropdown-col dropdown-col-cta">
+                                    <p class="dropdown-heading">Quick Actions</p>
+                                    <a href="index.html#filter" class="dropdown-link"><i class="fas fa-sliders-h"></i> Find My Trek</a>
+                                    <a href="departures.html" class="dropdown-link"><i class="fas fa-calendar-check"></i> View Departures</a>
+                                    <a href="contact.html" class="dropdown-link"><i class="fas fa-paper-plane"></i> Custom Trek</a>
+                                    <div class="dropdown-badge">
+                                        <i class="fas fa-tag"></i> Treks from <strong>$650</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="departures.html" class="nav-link">Departures</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="destinations.html" class="nav-link">
+                            Destinations <i class="fas fa-chevron-down nav-arrow"></i>
+                        </a>
+                        <div class="dropdown dropdown-sm">
+                            <div class="dropdown-inner">
+                                <div class="dropdown-col">
+                                    <p class="dropdown-heading">Regions</p>
+                                    <a href="everest-region.html" class="dropdown-link"><span class="dlink-icon"><i class="fas fa-hiking"></i></span><span><strong>Everest Region</strong><small>12 treks available</small></span></a>
+                                    <a href="annapurna-region.html" class="dropdown-link"><span class="dlink-icon"><i class="fas fa-mountain"></i></span><span><strong>Annapurna Region</strong><small>9 treks available</small></span></a>
+                                    <a href="langtang-region.html" class="dropdown-link"><span class="dlink-icon"><i class="fas fa-tree"></i></span><span><strong>Langtang Region</strong><small>6 treks available</small></span></a>
+                                    <a href="manaslu-region.html" class="dropdown-link"><span class="dlink-icon"><i class="fas fa-compass"></i></span><span><strong>Manaslu Region</strong><small>5 treks available</small></span></a>
+                                    <a href="dolpa-region.html" class="dropdown-link"><span class="dlink-icon"><i class="fas fa-paw"></i></span><span><strong>Dolpa Region</strong><small>4 treks available</small></span></a>
+                                    <a href="kanchenjunga-region.html" class="dropdown-link"><span class="dlink-icon"><i class="fas fa-mountain"></i></span><span><strong>Kanchenjunga Region</strong><small>2 treks available</small></span></a>
+                                    <a href="mustang-region.html" class="dropdown-link"><span class="dlink-icon"><i class="fas fa-sun"></i></span><span><strong>Mustang Region</strong><small>3 treks available</small></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="contact.html" class="nav-cta"><i class="fas fa-paper-plane"></i> Plan My Trip</a>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-links">
+                <li><a href="index.html#treks">🏔 Featured Treks</a></li>
+                <li><a href="departures.html">📅 Departures</a></li>
+                <li><a href="destinations.html">📍 Destinations</a></li>
+                <li><a href="about.html">⭐ About Us</a></li>
+                <li><a href="contact.html">📞 Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="pkg-hero">
+        <div class="pkg-hero-bg"></div>
+        <div class="pkg-hero-overlay"></div>
+        <div class="pkg-hero-content">
+            <span class="pkg-badge">Sacred Hidden Valley</span>
+            <h1>Tsum Valley Trek</h1>
+            <p>Journey into a forgotten Buddhist kingdom — a 'Beyul' where time stands still and compassion rules the land.</p>
+            <div class="hero-btns">
+                <a href="#book" class="btn-primary">Book This Trek</a>
+                <a href="contact.html" class="btn-outline">Customize Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- ===== QUICK FACTS BAR ===== -->
+        <div class="quick-facts-bar">
+            <div class="fact-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Duration</span>
+                <strong>18 Days</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-mountain"></i>
+                <span>Max Altitude</span>
+                <strong>3,700m</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-signal"></i>
+                <span>Difficulty</span>
+                <strong>Moderate</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Region</span>
+                <strong>Manaslu (Restricted)</strong>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-cloud-sun"></i>
+                <span>Best Season</span>
+                <strong>Spring / Autumn</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TREK OVERVIEW ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" style="text-align: left; max-width: 800px; margin-left: 0;">
+                <span class="section-tag">Overview</span>
+                <h2 class="section-title">The Valley of <span class="accent">Sacred Happiness</span></h2>
+            </div>
+            <div class="overview-grid" style="display: grid; grid-template-columns: 3fr 2fr; gap: 50px; align-items: start;">
+                <div class="overview-text">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 20px;">
+                        The Tsum Valley is a sacred Himalayan pilgrimage valley situated in northern Gorkha, Nepal. 'Tsum' is derived from the Tibetan word 'Tsombo', which means vivid. Traditionally, the valley was a distinct geographical area called Tsum Tso Chuksum.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 20px;">
+                        Against the backdrop of the majestic Ganesh Himal, Sringi Himal, and Boudha Himal ranges, this hidden valley is rich in ancient Buddhist culture. The people of Tsum Valley, known as Tsumbas, are of Tibetan origin and have their own unique dialect and traditions. The valley is known for its strict practice of non-violence (Shyakya), where no animals are slaughtered.
+                    </p>
+
+                    <div class="permit-notice">
+                        <i class="fas fa-id-card"></i>
+                        <div>
+                            <h4>Restricted Area Trek</h4>
+                            <p>Tsum Valley is a restricted area. Trekkers require a special Restricted Area Permit, and it is mandatory to trek with a licensed guide. All logistics and permits are handled by HimalayaQuest.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-table" style="background: #f8f9fa; padding: 30px; border-radius: 15px; border-left: 5px solid var(--pkg-green);">
+                    <h3 style="margin-bottom: 20px; font-size: 1.5rem;">Trip Facts</h3>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Group Size</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">2–10 Persons</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Accommodation</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Teahouses / Homestays</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Max Elevation</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">3,700m (Mu Gompa)</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Difficulty</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Moderate</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HIGHLIGHTS ===== -->
+    <section class="section" style="background: #fff;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Highlights</span>
+                <h2 class="section-title">Sacred <span class="accent">Wonders</span></h2>
+            </div>
+            <ul class="highlights-list">
+                <li class="high-item">
+                    <i class="fas fa-dharmachakra"></i>
+                    <div>
+                        <strong>Mu Gompa</strong>
+                        <p>The largest and oldest monastery in the valley, perched at 3,700m with stunning mountain vistas.</p>
+                    </div>
+                </li>
+                <li class="high-item">
+                    <i class="fas fa-peace"></i>
+                    <div>
+                        <strong>Piren Phu Cave</strong>
+                        <p>The sacred cave where the great Buddhist saint Milarepa is said to have meditated.</p>
+                    </div>
+                </li>
+                <li class="high-item">
+                    <i class="fas fa-mountain"></i>
+                    <div>
+                        <strong>Ganesh Himal Views</strong>
+                        <p>Unrivaled views of the Ganesh Himal range, Sringi Himal, and Boudha Himal.</p>
+                    </div>
+                </li>
+                <li class="high-item">
+                    <i class="fas fa-users-rays"></i>
+                    <div>
+                        <strong>Hidden Culture</strong>
+                        <p>Authentic Tibetan-influenced lifestyle and the unique 'Shyakya' tradition of non-violence.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== ITINERARY ===== -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Itinerary</span>
+                <h2 class="section-title">18-Day <span class="accent">Journey</span></h2>
+            </div>
+            <div class="itinerary-container">
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><div class="iti-day-circle">01</div> Arrival in Kathmandu</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        <p>Pick up from Tribhuvan International Airport and transfer to your hotel. Evening briefing about the trek.</p>
+                    </div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><div class="iti-day-circle">02</div> Kathmandu Sightseeing & Permits</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        <p>Guided tour of Pashupatinath, Boudhanath, and Swayambhunath while we process your restricted area permits.</p>
+                    </div>
+                </div>
+                <!-- ... More days ... -->
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><div class="iti-day-circle">03-05</div> Into the Foothills</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        <p>Drive to Machha Khola and trek through the Budhi Gandaki gorge to Jagat, the gateway to the restricted area.</p>
+                    </div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><div class="iti-day-circle">06-10</div> Entering the Sacred Valley</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        <p>Ascend to Lokpa - the entrance to Tsum Valley. Traverse through Chhekampar and Nile to reach the ultimate destination: Mu Gompa at 3,700m.</p>
+                    </div>
+                </div>
+                <div class="iti-item">
+                    <div class="iti-header">
+                        <h4><div class="iti-day-circle">11-18</div> Return Journey</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="iti-content">
+                        <p>Descend via Piren Phu cave and Gumba Lungdang. Return to Kathmandu and final departure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-mountain"></i>
+                        Himalaya<span>Quest</span>
+                    </div>
+                    <p>Nepal's premier adventure trekking company. We connect passionate travelers with the roof of the
+                        world, safely and sustainably.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#treks">All Treks</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="index.html#blog">Travel Blog</a></li>
+                        <li><a href="contact.html">Plan My Trip</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Trek Regions</h4>
+                    <ul>
+                        <li><a href="everest-region.html">Everest Region</a></li>
+                        <li><a href="annapurna-region.html">Annapurna Region</a></li>
+                        <li><a href="langtang-region.html">Langtang Region</a></li>
+                        <li><a href="manaslu-region.html">Manaslu Region</a></li>
+                        <li><a href="dolpa-region.html">Dolpa Region</a></li>
+                        <li><a href="kanchenjunga-region.html">Kanchenjunga Region</a></li>
+                        <li><a href="mustang-region.html">Mustang Region</a></li>
+                        <li><a href="makalu-region.html">Makalu Region</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone"></i> +977 1 4701234</li>
+                        <li><i class="fas fa-envelope"></i> info@himalayaquest.com</li>
+                        <li><i class="fas fa-clock"></i> Mon&ndash;Sat: 9AM &ndash; 6PM (NPT)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 HimalayaQuest Nepal. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        // Itinerary Accordion
+        document.querySelectorAll('.iti-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

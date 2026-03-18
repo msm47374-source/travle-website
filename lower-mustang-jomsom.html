@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gokyo Lakes Trek 2026 | Turquoise Lakes & Everest Views | HimalayaQuest</title>
+    <title>Lower Mustang & Jomsom Trek 2026 | Enchanting Himalayan Valley | HimalayaQuest</title>
     <meta name="description"
-        content="Experience the stunning 14-day Gokyo Lakes Trek with HimalayaQuest. Discover turquoise glacial lakes, climb Gokyo Ri for panoramic Everest views, and explore the heart of the Sherpa highlands." />
+        content="Discover the enchanting Lower Mustang and Jomsom Trek. Experience ancient Tibetan villages, apple orchards, and the stunning Kali Gandaki Gorge in just 8 days." />
     <meta name="keywords"
-        content="Gokyo Lakes Trek, Gokyo Ri, Everest Region Trekking, Nepal Himalayan Treks, Ngozumpa Glacier, turquoise lakes Nepal" />
+        content="Lower Mustang Trek, Jomsom Trek, Kagbeni, Marpha, Kali Gandaki Gorge, Nepal trekking, Mustang Valley trek, easy trek Nepal" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,7 +45,7 @@
         .pkg-hero-bg {
             position: absolute;
             inset: 0;
-            background-image: url('hero.png');
+            background-image: url('cta.png');
             background-size: cover;
             background-position: center;
             z-index: -1;
@@ -133,42 +133,6 @@
             color: #666;
             text-transform: uppercase;
             letter-spacing: 1px;
-        }
-
-        /* Sticky Booking Bar */
-        .sticky-booking {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
-            padding: 15px 0;
-            z-index: 1000;
-            transform: translateY(100%);
-            transition: transform 0.4s ease;
-        }
-
-        .sticky-booking.show {
-            transform: translateY(0);
-        }
-
-        .sticky-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .sticky-price {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--pkg-green);
-        }
-
-        .sticky-price span {
-            font-size: 0.9rem;
-            font-weight: 400;
-            color: #666;
         }
 
         /* Itinerary Accordion */
@@ -261,13 +225,18 @@
             transition: all 0.3s ease;
         }
 
+        .high-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
         .high-item i {
             color: var(--pkg-orange);
             font-size: 1.2rem;
             margin-top: 4px;
         }
 
-        /* Includes/Excludes Side by Side */
+        /* Cost Table */
         .cost-section {
             background: #f1f5f3;
             border-radius: 20px;
@@ -327,21 +296,6 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .fact-item {
-                border-right: none;
-                border-bottom: 1px solid #eee;
-                padding-bottom: 15px;
-            }
-
-            .fact-item:last-child {
-                border-bottom: none;
-            }
-
-            .sticky-inner {
-                flex-direction: column;
-                gap: 10px;
-            }
-
             .iti-item.active .iti-content {
                 padding-left: 20px;
             }
@@ -361,8 +315,9 @@
                 </a>
                 <ul class="nav-links" id="navLinks">
                     <li class="nav-item has-dropdown">
-                        <a href="index.html#treks" class="nav-link">Treks <i
-                                class="fas fa-chevron-down nav-arrow"></i></a>
+                        <a href="index.html#treks" class="nav-link">
+                            Treks <i class="fas fa-chevron-down nav-arrow"></i>
+                        </a>
                         <div class="dropdown">
                             <div class="dropdown-inner">
                                 <div class="dropdown-col">
@@ -376,37 +331,41 @@
                                         <span class="dlink-icon"><i class="fas fa-mountain"></i></span>
                                         <span><strong>Annapurna Circuit</strong><small>18 Days · Moderate</small></span>
                                     </a>
-                                    <<<<<<< Current (Your changes) <a href="mustang-region.html" class="dropdown-link">
+                                    <a href="abc-trek.html" class="dropdown-link">
                                         <span class="dlink-icon"><i class="fas fa-sun"></i></span>
-                                        <span><strong>Mustang Region</strong><small>3 treks available</small></span>
-                                        =======
-                                        <a href="abc-trek.html" class="dropdown-link">
-                                            <span class="dlink-icon"><i class="fas fa-sun"></i></span>
-                                            <span><strong>Annapurna Base Camp</strong><small>11 Days ·
-                                                    Moderate</small></span>
-                                        </a>
-                                        <a href="langtang-valley.html" class="dropdown-link">
-                                            <span class="dlink-icon"><i class="fas fa-tree"></i></span>
-                                            <span><strong>Langtang Valley</strong><small>10 Days · Easy</small></span>
-                                        </a>
-                                        <a href="dolpa-region.html" class="dropdown-link"><span class="dlink-icon"><i
-                                                    class="fas fa-paw"></i></span><span><strong>Dolpa
-                                                    Region</strong><small>4 treks
-                                                    available</small></span></a>
-                                        <a href="kanchenjunga-region.html" class="dropdown-link"><span
-                                                class="dlink-icon"><i
-                                                    class="fas fa-mountain"></i></span><span><strong>Kanchenjunga
-                                                    Region</strong><small>2 treks
-                                                    available</small></span></a>
-                                        <a href="mustang-region.html" class="dropdown-link"><span class="dlink-icon"><i
-                                                    class="fas fa-sun"></i></span><span><strong>Mustang
-                                                    Region</strong><small>3 treks
-                                                    available</small></span></a>
-                                        <a href="manaslu-circuit.html" class="dropdown-link">
-                                            <span class="dlink-icon"><i class="fas fa-compass"></i></span>
-                                            <span><strong>Manaslu Circuit</strong><small>16 Days ·
-                                                    Challenging</small></span>
-                                        </a>
+                                        <span><strong>Annapurna Base Camp</strong><small>11 Days ·
+                                                Moderate</small></span>
+                                    </a>
+                                    <a href="ghorepani-poon-hill.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-binoculars"></i></span>
+                                        <span><strong>Ghorepani Poon Hill</strong><small>5 Days · Easy</small></span>
+                                    </a>
+                                    <a href="langtang-valley.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-tree"></i></span>
+                                        <span><strong>Langtang Valley</strong><small>10 Days · Easy</small></span>
+                                    </a>
+                                    <a href="manaslu-circuit.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-compass"></i></span>
+                                        <span><strong>Manaslu Circuit</strong><small>16 Days ·
+                                                Challenging</small></span>
+                                    </a>
+                                    <a href="tsum-valley-trek.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-peace"></i></span>
+                                        <span><strong>Tsum Valley Trek</strong><small>18 Days · Moderate</small></span>
+                                    </a>
+                                    <a href="lower-mustang-jomsom.html" class="dropdown-link nav-active">
+                                        <span class="dlink-icon"><i class="fas fa-sun"></i></span>
+                                        <span><strong>Lower Mustang & Jomsom</strong><small>8 Days · Easy</small></span>
+                                    </a>
+                                    <a href="upper-mustang-trek.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-sun"></i></span>
+                                        <span><strong>Upper Mustang Trek</strong><small>14 Days ·
+                                                Moderate</small></span>
+                                    </a>
+                                    <a href="gokyo-lakes.html" class="dropdown-link">
+                                        <span class="dlink-icon"><i class="fas fa-water"></i></span>
+                                        <span><strong>Gokyo Lakes Trek</strong><small>14 Days · Moderate</small></span>
+                                    </a>
                                 </div>
                                 <div class="dropdown-col dropdown-col-cta">
                                     <p class="dropdown-heading">Quick Actions</p>
@@ -414,57 +373,84 @@
                                         Find My Trek</a>
                                     <a href="departures.html" class="dropdown-link"><i
                                             class="fas fa-calendar-check"></i> View Departures</a>
-                                    <a href="index.html#plan" class="dropdown-link"><i class="fas fa-paper-plane"></i>
+                                    <a href="contact.html" class="dropdown-link"><i class="fas fa-paper-plane"></i>
                                         Custom Trek</a>
+                                    <div class="dropdown-badge">
+                                        <i class="fas fa-tag"></i> Treks from <strong>$650</strong>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="departures.html" class="nav-link">Departures</a></li>
+                    <li class="nav-item">
+                        <a href="departures.html" class="nav-link">Departures</a>
+                    </li>
                     <li class="nav-item has-dropdown">
-                        <a href="destinations.html" class="nav-link">Destinations <i
-                                class="fas fa-chevron-down nav-arrow"></i></a>
+                        <a href="destinations.html" class="nav-link">
+                            Destinations <i class="fas fa-chevron-down nav-arrow"></i>
+                        </a>
                         <div class="dropdown dropdown-sm">
                             <div class="dropdown-inner">
                                 <div class="dropdown-col">
                                     <p class="dropdown-heading">Regions</p>
-                                    <a href="everest-region.html" class="dropdown-link"><span><strong>Everest
-                                                Region</strong></span></a>
-                                    <a href="destinations.html#annapurna" class="dropdown-link"><span><strong>Annapurna
-                                                Region</strong></span></a>
-                                    <a href="destinations.html#langtang" class="dropdown-link"><span><strong>Langtang
-                                                Region</strong></span></a>
-                                    <a href="destinations.html#manaslu" class="dropdown-link"><span><strong>Manaslu
-                                                Region</strong></span></a>
-                                    <a href="dolpa-region.html" class="dropdown-link"><span><strong>Dolpa
-                                                Region</strong></span></a>
-                                    <a href="kanchenjunga-region.html" class="dropdown-link"><span><strong>Kanchenjunga
-                                                Region</strong></span></a>
-                                    <a href="mustang-region.html" class="dropdown-link"><span><strong>Mustang
-                                                Region</strong></span></a>
+                                    <a href="everest-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-hiking"></i></span><span><strong>Everest
+                                                Region</strong><small>12 treks available</small></span></a>
+                                    <a href="annapurna-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-mountain"></i></span><span><strong>Annapurna
+                                                Region</strong><small>9 treks available</small></span></a>
+                                    <a href="langtang-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-tree"></i></span><span><strong>Langtang
+                                                Region</strong><small>6 treks available</small></span></a>
+                                    <a href="manaslu-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-compass"></i></span><span><strong>Manaslu
+                                                Region</strong><small>5 treks available</small></span></a>
+                                    <a href="dolpa-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-paw"></i></span><span><strong>Dolpa
+                                                Region</strong><small>4 treks available</small></span></a>
+                                    <a href="mustang-region.html" class="dropdown-link"><span class="dlink-icon"><i
+                                                class="fas fa-sun"></i></span><span><strong>Mustang
+                                                Region</strong><small>3 treks available</small></span></a>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
                 </ul>
                 <div class="nav-actions">
                     <a href="contact.html" class="nav-cta"><i class="fas fa-paper-plane"></i> Plan My Trip</a>
-                    <button class="hamburger" id="hamburger"
-                        aria-label="Toggle menu"><span></span><span></span><span></span></button>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-links">
+                <li><a href="index.html#treks">🏔 Featured Treks</a></li>
+                <li><a href="departures.html">📅 Departures</a></li>
+                <li><a href="destinations.html">📍 Destinations</a></li>
+                <li><a href="about.html">⭐ About Us</a></li>
+                <li><a href="contact.html">📞 Contact</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- ===== HERO SECTION ===== -->
     <section class="pkg-hero">
-        <div class="pkg-hero-bg" style="background-image: url('hero.png');"></div>
+        <div class="pkg-hero-bg"></div>
         <div class="pkg-hero-overlay"></div>
         <div class="pkg-hero-content">
-            <span class="pkg-badge">Turquoise Wonders</span>
-            <h1>Gokyo Lakes Trek</h1>
-            <p>Experience the mesmerizing glacial lakes and the greatest panoramic view of the Everest giants.</p>
+            <span class="pkg-badge">Authentic Mustang Valley</span>
+            <h1>Lower Mustang & Jomsom Trek</h1>
+            <p>Discover ancient Tibetan villages, apple orchards, and the world's deepest river gorge in just 8 days.
+            </p>
             <div class="hero-btns">
                 <a href="#book" class="btn-primary">Book This Trek</a>
                 <a href="contact.html" class="btn-outline">Customize Trip</a>
@@ -478,27 +464,27 @@
             <div class="fact-item">
                 <i class="fas fa-calendar-alt"></i>
                 <span>Duration</span>
-                <strong>14 Days</strong>
+                <strong>8 Days</strong>
             </div>
             <div class="fact-item">
                 <i class="fas fa-mountain"></i>
                 <span>Max Altitude</span>
-                <strong>5,357m</strong>
+                <strong>2,950m</strong>
             </div>
             <div class="fact-item">
                 <i class="fas fa-signal"></i>
                 <span>Difficulty</span>
-                <strong>Moderate</strong>
+                <strong>Easy</strong>
             </div>
             <div class="fact-item">
                 <i class="fas fa-map-marker-alt"></i>
                 <span>Region</span>
-                <strong>Everest</strong>
+                <strong>Lower Mustang</strong>
             </div>
             <div class="fact-item">
                 <i class="fas fa-cloud-sun"></i>
                 <span>Best Season</span>
-                <strong>Spring / Autumn</strong>
+                <strong>Feb–Dec</strong>
             </div>
         </div>
     </div>
@@ -508,26 +494,29 @@
         <div class="container">
             <div class="section-header" style="text-align: left; max-width: 800px; margin-left: 0;">
                 <span class="section-tag">Overview</span>
-                <h2 class="section-title">A Journey to the <span class="accent">Emerald Lakes</span></h2>
+                <h2 class="section-title">A Quick Escape to <span class="accent">Hidden Mustang</span></h2>
             </div>
             <div class="overview-grid"
                 style="display: grid; grid-template-columns: 3fr 2fr; gap: 50px; align-items: start;">
                 <div class="overview-text">
                     <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 20px;">
-                        The Gokyo Lakes trek is widely considered the most stunning alternative to the classic Everest
-                        Base Camp route. It leads you into the heart of the Khumbu through a different valley, leading
-                        to a series of six spectacular <strong>turquoise glacial lakes</strong>.
+                        The Lower Mustang and Jomsom Trek is the perfect introduction to the Mustang region for those
+                        with limited time. Starting from the charming town of Jomsom, this 8-day trek ventures through
+                        the lower valleys and villages that offer authentic Tibetan culture without the restrictions and
+                        high altitude of Upper Mustang.
                     </p>
                     <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 20px;">
-                        Beyond the mesmerizing lakes, the trek offers a climb to the summit of <strong>Gokyo Ri
-                            (5,357m)</strong>. From here, you'll witness a vista that many argue surpasses that of Kala
-                        Patthar, featuring four of the world's fourteen 8,000m peaks: Everest, Lhotse, Makalu, and Cho
-                        Oyu.
+                        You'll trek along the extraordinary <strong>Kali Gandaki Gorge</strong>, one of the world's
+                        deepest river canyons, visiting medieval villages like <strong>Kagbeni</strong> and
+                        <strong>Marpha</strong> with their traditional architecture, whitewashed houses, and vibrant
+                        culture. The region is also famous for its <strong>apple orchards</strong> and unique local
+                        wines.
                     </p>
                     <p style="font-size: 1.1rem; line-height: 1.8; color: #444;">
-                        Traversing the <strong>Ngozumpa Glacier</strong>—the largest in the Nepal Himalayas—and staying
-                        in the high-altitude settlement of Gokyo, this trek is a perfect blend of natural wonder and
-                        cultural depth.
+                        This trek is ideal for travelers seeking cultural immersion, stunning mountain scenery, and
+                        authentic village experiences, all without extreme altitude or technical challenges.
+                        <strong>Jomsom</strong> itself sits at 2,720m and is the gateway to Mustang, offering
+                        spectacular views of Dhaulagiri and Nilgiri peaks.
                     </p>
                 </div>
                 <div class="overview-table"
@@ -539,20 +528,24 @@
                             <td style="padding: 10px 0; text-align: right; font-weight: 600;">2–12 Persons</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 10px 0; color: #666;">Permits</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">ACAP + TIMS</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
                             <td style="padding: 10px 0; color: #666;">Accommodation</td>
-                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Teahouses / Lodges</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Teahouses</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #ddd;">
-                            <td style="padding: 10px 0; color: #666;">Max Elevation</td>
-                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">5,357m (Gokyo Ri)</td>
+                            <td style="padding: 10px 0; color: #666;">Meals</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">B, L, D included</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #ddd;">
-                            <td style="padding: 10px 0; color: #666;">Difficulty</td>
-                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Moderate</td>
+                            <td style="padding: 10px 0; color: #666;">Starting Point</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">Jomsom (via Pokhara)</td>
                         </tr>
                         <tr>
-                            <td style="padding: 10px 0; color: #666;">Starting Price</td>
-                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">$1,150</td>
+                            <td style="padding: 10px 0; color: #666;">Walking Hours</td>
+                            <td style="padding: 10px 0; text-align: right; font-weight: 600;">4–6 Hours / Day</td>
                         </tr>
                     </table>
                 </div>
@@ -565,37 +558,49 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Highlights</span>
-                <h2 class="section-title">Experience the <span class="accent">Gokyo Magic</span></h2>
+                <h2 class="section-title">Why You'll <span class="accent">Fall in Love</span></h2>
             </div>
             <ul class="highlights-list">
-                <li class="high-item"><i class="fas fa-water"></i>
-                    <div><strong>The Six Glacial Lakes</strong>
-                        <p>Hike alongside the mesmerizing turquoise waters of the Gokyo valley.</p>
+                <li class="high-item">
+                    <i class="fas fa-wine-glass"></i>
+                    <div>
+                        <strong>Marpha's Wine & Culture</strong>
+                        <p>Taste local apple wine in the charming medieval town famous for brandy production.</p>
                     </div>
                 </li>
-                <li class="high-item"><i class="fas fa-eye"></i>
-                    <div><strong>Gokyo Ri Viewpoint</strong>
-                        <p>Panoramic views of Everest, Lhotse, Makalu, and Cho Oyu from 5,357m.</p>
+                <li class="high-item">
+                    <i class="fas fa-water"></i>
+                    <div>
+                        <strong>Kali Gandaki Gorge</strong>
+                        <p>Trek through the world's deepest river gorge, flanked by 6,000m peaks.</p>
                     </div>
                 </li>
-                <li class="high-item"><i class="fas fa-icicles"></i>
-                    <div><strong>Ngozumpa Glacier</strong>
-                        <p>Walk across the largest glacier in the Nepal Himalayas.</p>
+                <li class="high-item">
+                    <i class="fas fa-apple-alt"></i>
+                    <div>
+                        <strong>Apple Orchards</strong>
+                        <p>Walk through thriving orchards and experience local farming traditions.</p>
                     </div>
                 </li>
-                <li class="high-item"><i class="fas fa-mountain"></i>
-                    <div><strong>Sherpa Villages</strong>
-                        <p>Stay in authentic high-altitude settlements like Machhermo and Dole.</p>
+                <li class="high-item">
+                    <i class="fas fa-pagelines"></i>
+                    <div>
+                        <strong>Tibetan Villages & Monasteries</strong>
+                        <p>Discover preserved Tibetan architecture and hidden monasteries with ancient paintings.</p>
                     </div>
                 </li>
-                <li class="high-item"><i class="fas fa-plane"></i>
-                    <div><strong>Everest Flight</strong>
-                        <p>The exhilarating flight from Kathmandu to the mountain airstrip of Lukla.</p>
+                <li class="high-item">
+                    <i class="fas fa-mountains"></i>
+                    <div>
+                        <strong>Jomsom Mountain Views</strong>
+                        <p>Experience stunning views of Dhaulagiri (8,167m) and Nilgiri (7,061m) from the valley.</p>
                     </div>
                 </li>
-                <li class="high-item"><i class="fas fa-hiking"></i>
-                    <div><strong>Off-beaten Path</strong>
-                        <p>A quieter, more scenic alternative to the main Everest Base Camp trail.</p>
+                <li class="high-item">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <strong>Authentic Local Hospitality</strong>
+                        <p>Sleep in family-run teahouses and share meals with Tibetan families.</p>
                     </div>
                 </li>
             </ul>
@@ -603,108 +608,113 @@
     </section>
 
     <!-- ===== ITINERARY ===== -->
-    <section class="section bg-light" id="itinerary">
+    <section class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Daily Route</span>
-                <h2 class="section-title">14 Days <span class="accent">Itinerary</span></h2>
+                <span class="section-tag">The Route</span>
+                <h2 class="section-title">8 Days <span class="accent">Itinerary</span></h2>
             </div>
             <div class="itinerary-container">
-                <div class="iti-item">
+                <div class="iti-item active">
                     <div class="iti-header">
-                        <h4><span class="iti-day-circle">01</span> Arrival in Kathmandu</h4><i
-                            class="fas fa-chevron-down"></i>
+                        <h4>
+                            <div class="iti-day-circle">01</div> Kathmandu to Pokhara
+                        </h4>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="iti-content">Transfer to hotel and trip briefing.</div>
-                </div>
-                <div class="iti-item">
-                    <div class="iti-header">
-                        <h4><span class="iti-day-circle">02</span> Fly to Lukla & Trek to Phakding</h4><i
-                            class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="iti-content">35 min flight followed by a 3-4 hour trek (2,610m).</div>
-                </div>
-                <div class="iti-item">
-                    <div class="iti-header">
-                        <h4><span class="iti-day-circle">03</span> Trek to Namche Bazaar</h4><i
-                            class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="iti-content">Steep climb to the Sherpa capital (3,440m).</div>
-                </div>
-                <div class="iti-item">
-                    <div class="iti-header">
-                        <h4><span class="iti-day-circle">04</span> Acclimatization in Namche</h4><i
-                            class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="iti-content">Hike to Everest View Hotel for first glimpses of the giants.</div>
-                </div>
-                <div class="iti-item">
-                    <div class="iti-header">
-                        <h4><span class="iti-day-circle">05</span> Trek to Phortse Thanga</h4><i
-                            class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="iti-content">Branching off toward the Gokyo Valley (3,680m).</div>
-                </div>
-                <div class="iti-item">
-                    <div class="iti-header">
-                        <h4><span class="iti-day-circle">06</span> Trek to Machhermo</h4><i
-                            class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="iti-content">Steady climb through rhododendron forests (4,470m).</div>
-                </div>
-                <div class="iti-item">
-                    <div class="iti-header">
-                        <h4><span class="iti-day-circle">07</span> Trek to Gokyo</h4><i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="iti-content">Witnessing the first and second lakes before arriving at Gokyo (4,800m).
+                    <div class="iti-content">
+                        Scenic drive from Kathmandu to the lakeside city of Pokhara (approx. 6-7 hours). Afternoon at
+                        leisure exploring the Phewa Lake area or visit the Shanti Stupa for panoramic views.
                     </div>
                 </div>
                 <div class="iti-item">
                     <div class="iti-header">
-                        <h4><span class="iti-day-circle">08</span> Explore Fourth & Fifth Lakes</h4><i
-                            class="fas fa-chevron-down"></i>
+                        <h4>
+                            <div class="iti-day-circle">02</div> Pokhara Flight to Jomsom
+                        </h4>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="iti-content">A stunning day trip further up the valley toward Cho Oyu base.</div>
+                    <div class="iti-content">
+                        Early morning scenic flight from Pokhara to Jomsom (30 mins), flying between the Dhaulagiri and
+                        Annapurna ranges. One of the most spectacular mountain flights in the world! Afternoon in Jomsom
+                        exploring the town and acclimatizing. (Alt: 2,720m)
+                    </div>
                 </div>
                 <div class="iti-item">
                     <div class="iti-header">
-                        <h4><span class="iti-day-circle">09</span> Gokyo Ri Hike & Trek to Dole</h4><i
-                            class="fas fa-chevron-down"></i>
+                        <h4>
+                            <div class="iti-day-circle">03</div> Jomsom to Marpha
+                        </h4>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="iti-content">Sunrise hike to Gokyo Ri (5,357m) then descent to Dole (4,200m).</div>
+                    <div class="iti-content">
+                        Easy trek along the Kali Gandaki riverbed to the beautiful village of Marpha. Visit the Marpha
+                        monasteries and explore the narrow bazaar. Evening: sample local apple brandy and wine. (Alt:
+                        2,670m, Walking: 4–5 hrs)
+                    </div>
                 </div>
                 <div class="iti-item">
                     <div class="iti-header">
-                        <h4><span class="iti-day-circle">10</span> Trek to Namche Bazaar</h4><i
-                            class="fas fa-chevron-down"></i>
+                        <h4>
+                            <div class="iti-day-circle">04</div> Marpha to Tukuche
+                        </h4>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="iti-content">Retracing steps back to the bustling hub.</div>
+                    <div class="iti-content">
+                        Trek through apple orchards and past traditional whitewashed houses to Tukuche, a former trading
+                        post. Visit the ancient gompa and enjoy views of Tilicho Peak. (Alt: 2,590m, Walking: 4–5 hrs)
+                    </div>
                 </div>
                 <div class="iti-item">
                     <div class="iti-header">
-                        <h4><span class="iti-day-circle">11</span> Trek to Lukla</h4><i class="fas fa-chevron-down"></i>
+                        <h4>
+                            <div class="iti-day-circle">05</div> Tukuche to Kagbeni
+                        </h4>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="iti-content">Final trekking day back to the airstrip.</div>
+                    <div class="iti-content">
+                        Trek uphill through the scenic Kali Gandaki gorge. Kagbeni is a medieval fortress village at the
+                        entrance to Upper Mustang. Explore the ancient stone houses, monasteries, and the walled
+                        settlement. (Alt: 2,810m, Walking: 5–6 hrs)
+                    </div>
                 </div>
                 <div class="iti-item">
                     <div class="iti-header">
-                        <h4><span class="iti-day-circle">12</span> Fly to Kathmandu</h4><i
-                            class="fas fa-chevron-down"></i>
+                        <h4>
+                            <div class="iti-day-circle">06</div> Kagbeni Acclimatization & Exploration
+                        </h4>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="iti-content">Return flight and free afternoon in Thamel.</div>
+                    <div class="iti-content">
+                        Full day in Kagbeni for acclimatization and exploration. Hike to nearby viewpoints for views of
+                        Nilgiri and Dhaulagiri. Visit local monasteries and chai houses. Explore the junction where the
+                        Kali Gandaki and Jhomsom rivers meet. (Alt: 2,810m)
+                    </div>
                 </div>
                 <div class="iti-item">
                     <div class="iti-header">
-                        <h4><span class="iti-day-circle">13</span> Free Day in Kathmandu</h4><i
-                            class="fas fa-chevron-down"></i>
+                        <h4>
+                            <div class="iti-day-circle">07</div> Kagbeni to Lete
+                        </h4>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="iti-content">Shopping and optional sightseeing.</div>
+                    <div class="iti-content">
+                        Trek downhill through the Kali Gandaki gorge, passing through scenic landscape with towering
+                        cliffs. Lete is a quiet village surrounded by apple orchards. Relax and enjoy local hospitality.
+                        (Alt: 2,480m, Walking: 5 hrs)
+                    </div>
                 </div>
                 <div class="iti-item">
                     <div class="iti-header">
-                        <h4><span class="iti-day-circle">14</span> Departure</h4><i class="fas fa-chevron-down"></i>
+                        <h4>
+                            <div class="iti-day-circle">08</div> Lete to Jomsom & Return to Pokhara
+                        </h4>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="iti-content">Transfer to airport for your flight home.</div>
+                    <div class="iti-content">
+                        Easy trek back to Jomsom (2 hours). Afternoon flight back to Pokhara. Evening drive towards
+                        Kathmandu or stay in Pokhara for additional exploration. Farewell dinner.
+                    </div>
                 </div>
             </div>
         </div>
@@ -714,29 +724,34 @@
     <section class="section">
         <div class="container">
             <div class="cost-section">
+                <div class="section-header" style="text-align: left; margin-bottom: 40px;">
+                    <h2 class="section-title">Trip <span class="accent">Cost</span></h2>
+                    <div class="trek-price" style="font-size: 2rem;">From <strong>$890</strong> <span
+                            style="font-size: 1rem; color: #666; font-weight: 400;">/ person</span></div>
+                </div>
                 <div class="cost-grid">
                     <div class="cost-col">
-                        <h3><i class="fas fa-check-circle" style="color:var(--pkg-green)"></i> Cost Includes</h3>
+                        <h3><i class="fas fa-check-circle" style="color: var(--pkg-green);"></i> What's Included</h3>
                         <ul class="cost-list inc-list">
-                            <li>All airport transfers by private vehicle</li>
-                            <li>3-star hotel in Kathmandu with breakfast</li>
-                            <li>Round trip flights Kathmandu - Lukla</li>
-                            <li>All necessary trekking permits (Sagarmatha NP)</li>
-                            <li>Teahouse accommodation during the trek</li>
-                            <li>Standard meals (B, L, D) during the trek</li>
-                            <li>Professional government-licensed guide</li>
-                            <li>Experienced porters (1 porter for 2 trekkers)</li>
+                            <li>Hotel accommodation in Pokhara (2 nights)</li>
+                            <li>Flight Pokhara–Jomsom–Pokhara</li>
+                            <li>All teahouse accommodation during the trek</li>
+                            <li>ACAP and TIMS permits</li>
+                            <li>Experienced English-speaking trekking guide</li>
+                            <li>Porter service (1 porter for 2 trekkers)</li>
+                            <li>All meals (B, L, D) during trekking days</li>
+                            <li>Ground transport Kathmandu–Pokhara</li>
                         </ul>
                     </div>
                     <div class="cost-col">
-                        <h3><i class="fas fa-times-circle" style="color:#dc3545"></i> Cost Excludes</h3>
+                        <h3><i class="fas fa-times-circle" style="color: #dc3545;"></i> What's Excluded</h3>
                         <ul class="cost-list exc-list">
-                            <li>International airfare and Nepal visa</li>
-                            <li>Travel and medical insurance (REQUIRED)</li>
-                            <li>Personal trekking gear and equipment</li>
-                            <li>Tips for guide and porters</li>
-                            <li>Hot showers and battery charging on trek</li>
-                            <li>Personal expenses (Alcohol, snacks)</li>
+                            <li>International airfare and Nepal visa fee</li>
+                            <li>Personal trekking gear and travel insurance</li>
+                            <li>Tips for guide and porters (recommended)</li>
+                            <li>Personal expenses (laundry, hot showers, WiFi)</li>
+                            <li>Alcoholic drinks and bottled water</li>
+                            <li>Meals in Pokhara not specified in itinerary</li>
                         </ul>
                     </div>
                 </div>
@@ -781,7 +796,6 @@
                         <li><a href="langtang-region.html">Langtang Region</a></li>
                         <li><a href="manaslu-region.html">Manaslu Region</a></li>
                         <li><a href="dolpa-region.html">Dolpa Region</a></li>
-                        <li><a href="kanchenjunga-region.html">Kanchenjunga Region</a></li>
                         <li><a href="mustang-region.html">Mustang Region</a></li>
                     </ul>
                 </div>
@@ -814,7 +828,13 @@
         document.querySelectorAll('.iti-header').forEach(header => {
             header.addEventListener('click', () => {
                 const item = header.parentElement;
-                item.classList.toggle('active');
+                const isActive = item.classList.contains('active');
+
+                // Close all
+                document.querySelectorAll('.iti-item').forEach(i => i.classList.remove('active'));
+
+                // Toggle clicked
+                if (!isActive) item.classList.add('active');
             });
         });
     </script>
