@@ -182,45 +182,38 @@ document.addEventListener('keydown', e => {
 
 // ── Animate Statistic Counters (About Page) ──
 const stats = document.querySelectorAll('.stat-number');
-if (stats.length > 0) {
-  const statObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const finalContent = el.getAttribute('data-target');
-        
-        // Only run if not already animated
-        if (!el.classList.contains('counted')) {
-          el.classList.add('counted');
-          // If it's a pure number, animate it
-          if (!isNaN(finalContent)) {
-            const target = parseInt(finalContent);
-            let count = 0;
-            const duration = 2000;
-            const increment = target / (duration / 16); 
-
-            const updateCount = () => {
-              count += increment;
-              if (count < target) {
-                el.innerText = Math.ceil(count);
-                requestAnimationFrame(updateCount);
-              } else {
-                el.innerText = target;
-              }
-            };
-            updateCount();
-          } else {
-            // Text values, just show immediately
-            el.innerText = finalContent;
+  if (stats.length > 0) {
+    const statObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const finalContent = el.getAttribute('data-target');
+          
+          // Only run if not already animated
+          if (!el.classList.contains('counted')) {
+            el.classList.add('counted');
+            // If it's a pure number, animate it
+            if (!isNaN(finalContent)) {
+              const target = parseInt(finalContent);
+              let count = 0;
+              const duration = 2000;
+              const increment = target / (duration / 16); 
+              const counter = setInterval(() => {
+                count += increment;
+                if (count >= target) {
+                  el.innerText = target;
+                  clearInterval(counter);
+                } else {
+                  el.innerText = Math.floor(count);
+                }
+              }, 16);
+            }
           }
         }
-        observer.unobserve(el);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  stats.forEach(stat => statObserver.observe(stat));
-}
+      });
+    }, { threshold: 0.5 });
+    stats.forEach(s => statObserver.observe(s));
+  }
 
 // ── Filter Logic ──
 const applyBtn = document.getElementById('applyFilter');
@@ -319,57 +312,33 @@ const statsObs = new IntersectionObserver(entries => {
 const heroStats = document.querySelector('.hero-stats');
 if (heroStats) statsObs.observe(heroStats);
 
-// ── FAQ Accordion ──
-window.addEventListener('DOMContentLoaded', () => {
+// ── FAQ Accordion Logic ──
+document.addEventListener('DOMContentLoaded', () => {
   const faqItems = document.querySelectorAll('.faq-item');
-
+  
   faqItems.forEach(item => {
-    const btn = item.querySelector('.faq-question');
+    const question = item.querySelector('.faq-question');
     const answer = item.querySelector('.faq-answer');
-
-    btn.addEventListener('click', () => {
+    
+    question.addEventListener('click', () => {
       const isOpen = item.classList.contains('open');
-
-      // Close all open items
-      faqItems.forEach(other => {
-        other.classList.remove('open');
-        other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        other.querySelector('.faq-answer').classList.remove('open');
-      });
-
-      // Toggle clicked item
-      if (!isOpen) {
-        item.classList.add('open');
-        btn.setAttribute('aria-expanded', 'true');
-        answer.classList.add('open');
-      }
-    });
-  });
-
-  // ── FAQ Category Filter ──
-  const catBtns = document.querySelectorAll('.faq-cat-btn');
-
-  catBtns.forEach(catBtn => {
-    catBtn.addEventListener('click', () => {
-      // Update active button
-      catBtns.forEach(b => b.classList.remove('active'));
-      catBtn.classList.add('active');
-
-      const selected = catBtn.dataset.cat;
-
-      // Close all open accordions first
-      faqItems.forEach(item => {
-        item.classList.remove('open');
-        item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        item.querySelector('.faq-answer').classList.remove('open');
-
-        // Show / hide based on category
-        if (selected === 'all' || item.dataset.cat === selected) {
-          item.classList.remove('hidden');
-        } else {
-          item.classList.add('hidden');
+      
+      // Close all other items
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('open');
+          otherItem.querySelector('.faq-answer').classList.remove('open');
         }
       });
+      
+      // Toggle current item
+      if (isOpen) {
+        item.classList.remove('open');
+        answer.classList.remove('open');
+      } else {
+        item.classList.add('open');
+        answer.classList.add('open');
+      }
     });
   });
 });
