@@ -110,9 +110,28 @@ function renderDepartures(filter = 'all') {
   }
 }
 
+// Convert all local PNG/JPG images to free Unsplash source images
+function applyUnsplashSourceImages() {
+  document.querySelectorAll('img').forEach(img => {
+    const src = img.getAttribute('src');
+    if (!src) return;
+    if (/\.(png|jpe?g)$/i.test(src) || /(^|\/)hero\./i.test(src)) {
+      const keyword = img.getAttribute('alt') ? img.getAttribute('alt').split(' ').slice(0, 3).join(',') : 'trekking';
+      const width = 1200;
+      const height = Math.round(width * 0.66);
+      const unsplashUrl = `https://source.unsplash.com/featured/${width}x${height}?${encodeURIComponent(keyword + ',himalaya,adventure')}`;
+      img.setAttribute('src', unsplashUrl);
+      img.setAttribute('loading', 'lazy');
+      img.setAttribute('decoding', 'async');
+      img.removeAttribute('srcset');
+    }
+  });
+}
+
 // Init departures on load & wire up tabs
 window.addEventListener('DOMContentLoaded', () => {
   renderDepartures('all');
+  applyUnsplashSourceImages();
   document.querySelectorAll('.dep-tab').forEach(tab => {
     tab.addEventListener('click', () => {
       document.querySelectorAll('.dep-tab').forEach(t => t.classList.remove('active'));
