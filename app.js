@@ -4,19 +4,28 @@
 
 // ── Departures Data ──
 const departures = [
-  { trek: "Everest Base Camp Trek",    img: "everest.png",   region: "Everest",   depart: "2026-03-15", ret: "2026-03-28", days: 14, diff: "Challenging", diffCls: "diff-hard",  group: { cur: 8,  max: 12 }, status: "open",    price: 1200 },
-  { trek: "Annapurna Circuit Trek",    img: "annapurna.png", region: "Annapurna", depart: "2026-03-22", ret: "2026-04-08", days: 18, diff: "Moderate",    diffCls: "diff-mod",   group: { cur: 10, max: 12 }, status: "limited", price: 900  },
-  { trek: "Langtang Valley Trek",      img: "langtang.png",  region: "Langtang",  depart: "2026-04-05", ret: "2026-04-14", days: 10, diff: "Easy",        diffCls: "diff-easy",  group: { cur: 6,  max: 12 }, status: "open",    price: 650  },
-  { trek: "Manaslu Circuit Trek",      img: "manaslu.png",   region: "Manaslu",   depart: "2026-04-10", ret: "2026-04-25", days: 16, diff: "Challenging", diffCls: "diff-hard",  group: { cur: 12, max: 12 }, status: "full",    price: 1100 },
-  { trek: "Everest Base Camp Trek",    img: "everest.png",   region: "Everest",   depart: "2026-05-01", ret: "2026-05-14", days: 14, diff: "Challenging", diffCls: "diff-hard",  group: { cur: 4,  max: 12 }, status: "open",    price: 1200 },
-  { trek: "Annapurna Circuit Trek",    img: "annapurna.png", region: "Annapurna", depart: "2026-05-10", ret: "2026-05-27", days: 18, diff: "Moderate",    diffCls: "diff-mod",   group: { cur: 9,  max: 12 }, status: "limited", price: 900  },
-  { trek: "Langtang Valley Trek",      img: "langtang.png",  region: "Langtang",  depart: "2026-10-04", ret: "2026-10-13", days: 10, diff: "Easy",        diffCls: "diff-easy",  group: { cur: 3,  max: 12 }, status: "open",    price: 650  },
-  { trek: "Manaslu Circuit Trek",      img: "manaslu.png",   region: "Manaslu",   depart: "2026-10-12", ret: "2026-10-27", days: 16, diff: "Challenging", diffCls: "diff-hard",  group: { cur: 7,  max: 12 }, status: "open",    price: 1100 },
-  { trek: "Everest Base Camp Trek",    img: "everest.png",   region: "Everest",   depart: "2026-11-01", ret: "2026-11-14", days: 14, diff: "Challenging", diffCls: "diff-hard",  group: { cur: 11, max: 12 }, status: "limited", price: 1200 },
-  { trek: "Annapurna Circuit Trek",    img: "annapurna.png", region: "Annapurna", depart: "2026-11-08", ret: "2026-11-25", days: 18, diff: "Moderate",    diffCls: "diff-mod",   group: { cur: 5,  max: 12 }, status: "open",    price: 900  },
+  { trek: "Everest Base Camp Trek", img: "everest.png", region: "Everest", depart: "2026-03-15", ret: "2026-03-28", days: 14, diff: "Challenging", diffCls: "diff-hard", group: { cur: 8, max: 12 }, status: "open", price: 1200 },
+  { trek: "Annapurna Circuit Trek", img: "annapurna.png", region: "Annapurna", depart: "2026-03-22", ret: "2026-04-08", days: 18, diff: "Moderate", diffCls: "diff-mod", group: { cur: 10, max: 12 }, status: "limited", price: 900 },
+  { trek: "Langtang Valley Trek", img: "langtang.png", region: "Langtang", depart: "2026-04-05", ret: "2026-04-14", days: 10, diff: "Easy", diffCls: "diff-easy", group: { cur: 6, max: 12 }, status: "open", price: 650 },
+  { trek: "Manaslu Circuit Trek", img: "manaslu.png", region: "Manaslu", depart: "2026-04-10", ret: "2026-04-25", days: 16, diff: "Challenging", diffCls: "diff-hard", group: { cur: 12, max: 12 }, status: "full", price: 1100 },
+  { trek: "Everest Base Camp Trek", img: "everest.png", region: "Everest", depart: "2026-05-01", ret: "2026-05-14", days: 14, diff: "Challenging", diffCls: "diff-hard", group: { cur: 4, max: 12 }, status: "open", price: 1200 },
+  { trek: "Annapurna Circuit Trek", img: "annapurna.png", region: "Annapurna", depart: "2026-05-10", ret: "2026-05-27", days: 18, diff: "Moderate", diffCls: "diff-mod", group: { cur: 9, max: 12 }, status: "limited", price: 900 },
+  { trek: "Langtang Valley Trek", img: "langtang.png", region: "Langtang", depart: "2026-10-04", ret: "2026-10-13", days: 10, diff: "Easy", diffCls: "diff-easy", group: { cur: 3, max: 12 }, status: "open", price: 650 },
+  { trek: "Manaslu Circuit Trek", img: "manaslu.png", region: "Manaslu", depart: "2026-10-12", ret: "2026-10-27", days: 16, diff: "Challenging", diffCls: "diff-hard", group: { cur: 7, max: 12 }, status: "open", price: 1100 },
+  { trek: "Everest Base Camp Trek", img: "everest.png", region: "Everest", depart: "2026-11-01", ret: "2026-11-14", days: 14, diff: "Challenging", diffCls: "diff-hard", group: { cur: 11, max: 12 }, status: "limited", price: 1200 },
+  { trek: "Annapurna Circuit Trek", img: "annapurna.png", region: "Annapurna", depart: "2026-11-08", ret: "2026-11-25", days: 18, diff: "Moderate", diffCls: "diff-mod", group: { cur: 5, max: 12 }, status: "open", price: 900 },
 ];
 
-const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+// Generate optimized image URL through a lightweight proxy/transform API
+function getImageUrl(src, width = 1200) {
+  if (!src) return src;
+  if (/^(https?:|\/\/|data:)/i.test(src)) return src;
+  const clean = src.replace(/^\.\//, '').replace(/^\//, '');
+  const encoded = encodeURIComponent(clean);
+  return `https://images.weserv.nl/?url=besttreksnepal.com/${encoded}&w=${width}&fit=inside&output=webp&q=80`;
+}
 
 function fmtDate(iso) {
   const d = new Date(iso);
@@ -24,18 +33,18 @@ function fmtDate(iso) {
 }
 function getMonth(iso) { return monthNames[new Date(iso).getMonth()]; }
 function statusHtml(s) {
-  const map = { open: ['status-open','Open'], limited: ['status-limited','Limited'], full: ['status-full','Sold Out'] };
+  const map = { open: ['status-open', 'Open'], limited: ['status-limited', 'Limited'], full: ['status-full', 'Sold Out'] };
   const [cls, label] = map[s];
   return `<span class="dep-status ${cls}"><span class="status-dot"></span>${label}</span>`;
 }
 function diffHtml(label, cls) {
-  const map = { 'diff-easy':'badge-easy','diff-mod':'badge-moderate','diff-hard':'badge-challenging' };
+  const map = { 'diff-easy': 'badge-easy', 'diff-mod': 'badge-moderate', 'diff-hard': 'badge-challenging' };
   return `<span class="dep-diff ${map[cls]}">${label}</span>`;
 }
 
 function renderDepartures(filter = 'all') {
-  const body   = document.getElementById('depBody');
-  const cards  = document.getElementById('depCards');
+  const body = document.getElementById('depBody');
+  const cards = document.getElementById('depCards');
   if (!body || !cards) return;
 
   const filtered = filter === 'all' ? departures : departures.filter(d => getMonth(d.depart) === filter);
@@ -47,12 +56,12 @@ function renderDepartures(filter = 'all') {
     body.innerHTML = filtered.map(d => {
       const spots = d.group.max - d.group.cur;
       const isDisabled = d.status === 'full' ? 'disabled' : '';
-      const btnLabel  = d.status === 'full' ? 'Sold Out' : 'Book Now';
+      const btnLabel = d.status === 'full' ? 'Sold Out' : 'Book Now';
       return `
       <tr>
         <td>
           <div class="dep-trek-name">
-            <img src="${d.img}" alt="${d.trek}" class="dep-trek-img" />
+            <img src="${getImageUrl(d.img, 400)}" alt="${d.trek}" class="dep-trek-img" loading="lazy" decoding="async" />
             <div class="dep-trek-label">
               <span>${d.trek}</span>
               <small>${d.region} Region</small>
@@ -77,11 +86,11 @@ function renderDepartures(filter = 'all') {
   } else {
     cards.innerHTML = filtered.map(d => {
       const isDisabled = d.status === 'full' ? 'disabled' : '';
-      const btnLabel  = d.status === 'full' ? 'Sold Out' : 'Book Now';
+      const btnLabel = d.status === 'full' ? 'Sold Out' : 'Book Now';
       return `
       <div class="dep-card">
         <div class="dep-card-header">
-          <img src="${d.img}" alt="${d.trek}" class="dep-card-img" />
+          <img src="${getImageUrl(d.img, 500)}" alt="${d.trek}" class="dep-card-img" loading="lazy" decoding="async" />
           <div class="dep-card-title">${d.trek}<small>${d.region} Region</small></div>
         </div>
         <div class="dep-card-body">
@@ -115,19 +124,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // ── Trek Data ──
 const treks = [
-  { name: "Everest Base Camp Trek",   region: "everest",   days: 14, diff: "challenging", price: 1200, img: "everest.png",   badge: "badge-challenging", diffClass: "diff-hard", diffLabel: "Challenging", url: "everest-base-camp.html" },
-  { name: "Annapurna Circuit Trek",   region: "annapurna", days: 18, diff: "moderate",    price: 900,  img: "annapurna.png", badge: "badge-moderate",    diffClass: "diff-mod",  diffLabel: "Moderate",    url: "annapurna-circuit.html" },
-  { name: "Annapurna Base Camp Trek", region: "annapurna", days: 11, diff: "moderate",    price: 850,  img: "annapurna.png", badge: "badge-moderate",    diffClass: "diff-mod",  diffLabel: "Moderate",    url: "abc-trek.html" },
-  { name: "Langtang Valley Trek",     region: "langtang",  days: 10, diff: "easy",        price: 650,  img: "langtang.png",  badge: "badge-easy",       diffClass: "diff-easy", diffLabel: "Easy",        url: "langtang-valley.html" },
-  { name: "Manaslu Circuit Trek",     region: "manaslu",   days: 16, diff: "challenging", price: 1100, img: "manaslu.png",   badge: "badge-challenging", diffClass: "diff-hard", diffLabel: "Challenging", url: "manaslu-circuit.html" },
-  { name: "Upper Mustang Trek",      region: "mustang",   days: 14, diff: "moderate",    price: 1650, img: "cta.png",       badge: "badge-moderate",    diffClass: "diff-mod",  diffLabel: "Moderate",    url: "upper-mustang-trek.html" },
+  { name: "Everest Base Camp Trek", region: "everest", days: 14, diff: "challenging", price: 1200, img: "everest.png", badge: "badge-challenging", diffClass: "diff-hard", diffLabel: "Challenging", url: "everest-base-camp.html" },
+  { name: "Annapurna Circuit Trek", region: "annapurna", days: 18, diff: "moderate", price: 900, img: "annapurna.png", badge: "badge-moderate", diffClass: "diff-mod", diffLabel: "Moderate", url: "annapurna-circuit.html" },
+  { name: "Annapurna Base Camp Trek", region: "annapurna", days: 11, diff: "moderate", price: 850, img: "annapurna.png", badge: "badge-moderate", diffClass: "diff-mod", diffLabel: "Moderate", url: "abc-trek.html" },
+  { name: "Langtang Valley Trek", region: "langtang", days: 10, diff: "easy", price: 650, img: "langtang.png", badge: "badge-easy", diffClass: "diff-easy", diffLabel: "Easy", url: "langtang-valley.html" },
+  { name: "Manaslu Circuit Trek", region: "manaslu", days: 16, diff: "challenging", price: 1100, img: "manaslu.png", badge: "badge-challenging", diffClass: "diff-hard", diffLabel: "Challenging", url: "manaslu-circuit.html" },
+  { name: "Upper Mustang Trek", region: "mustang", days: 14, diff: "moderate", price: 1650, img: "cta.png", badge: "badge-moderate", diffClass: "diff-mod", diffLabel: "Moderate", url: "upper-mustang-trek.html" },
 ];
 
 function buildCard(trek) {
   return `
     <div class="trek-card fade-in">
       <div class="trek-img-wrap">
-        <img src="${trek.img}" alt="${trek.name}" class="trek-img" loading="lazy" />
+        <img src="${getImageUrl(trek.img, 900)}" alt="${trek.name}" class="trek-img" loading="lazy" decoding="async" />
         <div class="trek-badge ${trek.badge}">${trek.diffLabel}</div>
         <div class="trek-overlay"><a href="${trek.url}" class="btn-view">View Details <i class="fas fa-arrow-right"></i></a></div>
       </div>
@@ -135,7 +144,7 @@ function buildCard(trek) {
         <h3 class="trek-name">${trek.name}</h3>
         <div class="trek-meta">
           <span><i class="fas fa-clock"></i> ${trek.days} Days</span>
-          <span><i class="fas fa-map-marker-alt"></i> ${trek.region.charAt(0).toUpperCase()+trek.region.slice(1)} Region</span>
+          <span><i class="fas fa-map-marker-alt"></i> ${trek.region.charAt(0).toUpperCase() + trek.region.slice(1)} Region</span>
         </div>
         <div class="trek-diff ${trek.diffClass}"><i class="fas fa-signal"></i> ${trek.diffLabel}</div>
         <div class="trek-footer">
@@ -194,38 +203,38 @@ document.addEventListener('keydown', e => {
 
 // ── Animate Statistic Counters (About Page) ──
 const stats = document.querySelectorAll('.stat-number');
-  if (stats.length > 0) {
-    const statObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const el = entry.target;
-          const finalContent = el.getAttribute('data-target');
-          
-          // Only run if not already animated
-          if (!el.classList.contains('counted')) {
-            el.classList.add('counted');
-            // If it's a pure number, animate it
-            if (!isNaN(finalContent)) {
-              const target = parseInt(finalContent);
-              let count = 0;
-              const duration = 2000;
-              const increment = target / (duration / 16); 
-              const counter = setInterval(() => {
-                count += increment;
-                if (count >= target) {
-                  el.innerText = target;
-                  clearInterval(counter);
-                } else {
-                  el.innerText = Math.floor(count);
-                }
-              }, 16);
-            }
+if (stats.length > 0) {
+  const statObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const finalContent = el.getAttribute('data-target');
+
+        // Only run if not already animated
+        if (!el.classList.contains('counted')) {
+          el.classList.add('counted');
+          // If it's a pure number, animate it
+          if (!isNaN(finalContent)) {
+            const target = parseInt(finalContent);
+            let count = 0;
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            const counter = setInterval(() => {
+              count += increment;
+              if (count >= target) {
+                el.innerText = target;
+                clearInterval(counter);
+              } else {
+                el.innerText = Math.floor(count);
+              }
+            }, 16);
           }
         }
-      });
-    }, { threshold: 0.5 });
-    stats.forEach(s => statObserver.observe(s));
-  }
+      }
+    });
+  }, { threshold: 0.5 });
+  stats.forEach(s => statObserver.observe(s));
+}
 
 // ── Filter Logic ──
 const applyBtn = document.getElementById('applyFilter');
@@ -365,7 +374,7 @@ if (heroStats) statsObs.observe(heroStats);
 // ── FAQ Accordion Logic ──
 document.addEventListener('DOMContentLoaded', () => {
   const faqItems = document.querySelectorAll('.faq-item');
-  
+
   faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
     if (!question) return;
@@ -373,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
     question.addEventListener('click', () => {
       // Support both 'active' and 'open' classes for compatibility
       const isActive = item.classList.contains('active') || item.classList.contains('open');
-      
+
       // Close all other items
       faqItems.forEach(otherItem => {
         if (otherItem !== item) {
@@ -382,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (otherAnswer) otherAnswer.classList.remove('active', 'open');
         }
       });
-      
+
       // Toggle current item
       if (isActive) {
         item.classList.remove('active', 'open');
@@ -404,10 +413,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.innerHTML;
-    
+
     // Set loading state
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';

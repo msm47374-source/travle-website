@@ -739,7 +739,7 @@
             <tr>
               <td>
                 <div class="dep-trek-name">
-                  <img src="${d.img}" alt="${d.trek}" class="dep-trek-img" />
+                  <img src="${d.img}" alt="${d.trek}" class="dep-trek-img" / loading="lazy" decoding="async">
                   <div class="dep-trek-label">
                     <span>${d.trek}</span>
                     <small>${d.region} Region</small>
@@ -763,7 +763,7 @@
             return `
             <div class="dep-card">
               <div class="dep-card-header">
-                <img src="${d.img}" alt="${d.trek}" class="dep-card-img" />
+                <img src="${d.img}" alt="${d.trek}" class="dep-card-img" / loading="lazy" decoding="async">
                 <div class="dep-card-title">${d.trek}<small>${d.region} Region</small></div>
               </div>
               <div class="dep-card-body">
